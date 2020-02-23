@@ -1,8 +1,5 @@
 /*
-Create a stored procedure with corresponding input parameters allowing to display the details of
-a receipt including: the rental number, the rental date, the return date, the rented movie title,
-the quantity, the unit price and the amount. Note that each time a customer returns some movies at
-the same time, he will receive only one receipt for all movies that he returned.
+Author: Thaycacac
 */
 
 CREATE PROCEDURE Q3 @receiptId int, @rentalId int, @movieId int

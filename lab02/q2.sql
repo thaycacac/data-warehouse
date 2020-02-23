@@ -1,3 +1,7 @@
+/*
+Author: Thaycacac
+*/
+
 INSERT [dbo].[Customers] ([id], [first_name], [last_name], [date_of_birdth], [phone], [gender]) VALUES (2, N'Phạm Ngọc', N'Hòa', CAST(N'1998-03-20' AS Date), N'0968038714   ', 1)
 INSERT [dbo].[Customers] ([id], [first_name], [last_name], [date_of_birdth], [phone], [gender]) VALUES (3, N'Đỗ Quang', N'Hiệp', CAST(N'1997-02-10' AS Date), N'0963125474   ', 0)
 INSERT [dbo].[Customers] ([id], [first_name], [last_name], [date_of_birdth], [phone], [gender]) VALUES (4, N'Trần Quang', N'Nhật', CAST(N'1998-12-12' AS Date), N'0125479754   ', 1)

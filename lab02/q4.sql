@@ -1,8 +1,5 @@
 /*
-Create a stored procedure with rental number as an input parameter allowing 
-to display the details of a rental including rented movie title, rental date,
-return date, quantity, unit price and the amount. Note that a customer 
-could borrow some movies at a time.
+Author: Thaycacac
 */
 
 CREATE PROCEDURE Q4 @rentalId int

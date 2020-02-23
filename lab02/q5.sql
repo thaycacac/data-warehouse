@@ -1,8 +1,7 @@
 /*
-Create a trigger for automatically update the remaining quantity of 
-a movie in a machine when inserting this movie into a rental, prevent
-the update if the remaining quantity is not enough for rent.
+Author: Thaycacac
 */
+
 CREATE TRIGGER Q5 ON RentalMovies AFTER INSERT AS
 BEGIN
 	UPDATE MachineMove
