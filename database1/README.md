@@ -1,6 +1,4 @@
-# Operational Database
-
-## Context
+# Context
 
 A movie rental company has stores in USA and abroad. To obtain a card allowing to rent movies, customers must fill out a form mentioning their first name, last name, date of birth, phone number and gender (male/ female). 
 When a customer wants to rent a film, he can go to an automatic machine, select the film(s) he wants to rent (each film has a title, a category, a price per day and the number of films available in the machine). In the case that he has rented several films, the customer can bring back his films at different dates. However, all movies rented at the same time will have the same rental number in the system. Note that a movie could be available in different automatic machines. A customer rents a film from a machine could bring it back to another machine. For simplifying, if a customer rent n copies of a same movie at a time, he/she could return all n copies of this movie at the same time.
