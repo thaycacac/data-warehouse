@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{5FBC4F66-A1DA-436F-A1C9-8796929CE752}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{45E28A48-FF91-4BD0-A850-7D48DC932C17}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -87,7 +87,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{B0503EF0-35E2-459D-ABEB-36C296813D7E}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Product](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[ProductID_OP] [int] NOT NULL,&#xA;&#x9;[Color] [nvarchar](15) NULL,&#xA;&#x9;[SafetyStockLevel] [smallint] NOT NULL,&#xA;&#x9;[ListPrice] [money] NOT NULL,&#xA;&#x9;[Size] [nvarchar](5) NULL,&#xA;&#x9;[Weight] [decimal](8, 2) NULL,&#xA;&#x9;[Class] [nchar](2) NULL,&#xA;&#x9;[Style] [nchar](2) NULL,&#xA;&#x9;[Category] [nvarchar](50) NOT NULL,&#xA;&#x9;[SubCategory] [nvarchar](50) NOT NULL,&#xA;&#x9;[ProductNumber] [nvarchar](25) NOT NULL,&#xA;&#x9;[StandardCost] [money] NOT NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Product](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[ProductID_OP] [int] NOT NULL,&#xA;&#x9;[Name] [nvarchar](50) NOT NULL,&#xA;&#x9;[ProductNumber] [nvarchar](25) NOT NULL,&#xA;&#x9;[MakeFlag] [bit] NOT NULL,&#xA;&#x9;[FinishedGoodsFlag] [bit] NOT NULL,&#xA;&#x9;[Color] [nvarchar](15) NULL,&#xA;&#x9;[SafetyStockLevel] [smallint] NOT NULL,&#xA;&#x9;[ReorderPoint] [smallint] NOT NULL,&#xA;&#x9;[StandardCost] [money] NOT NULL,&#xA;&#x9;[ListPrice] [money] NOT NULL,&#xA;&#x9;[Size] [nvarchar](5) NULL,&#xA;&#x9;[Weight] [decimal](8, 2) NULL,&#xA;&#x9;[SizeUnitMeasureCode] [nchar](3) NULL,&#xA;&#x9;[WeightUnitMeasureCode] [nchar](3) NULL,&#xA;&#x9;[DaysToManufacture] [int] NOT NULL,&#xA;&#x9;[ProductLine] [nchar](2) NULL,&#xA;&#x9;[Class] [nchar](2) NULL,&#xA;&#x9;[Style] [nchar](2) NULL,&#xA;&#x9;[Category] [nvarchar](50) NOT NULL,&#xA;&#x9;[SubCategory] [nvarchar](50) NOT NULL,&#xA;&#x9;[SellStartDate] [datetime] NULL,&#xA;&#x9;[DiscontinuedDate] [datetime] NULL,&#xA;&#x9;[Rowguid] [uniqueidentifier] NOT NULL,&#xA;&#x9;[ModifiedDate] [datetime] NOT NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -155,7 +155,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{826B9400-D86D-431F-890D-D83F79C49B86}"
-          SQLTask:SqlStatementSource="CREATE DATABASE ASSIGNMENT_DW" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="IF EXISTS(SELECT* FROM sys.databases where name='ASSIGNMENT_DW')&#xA;DROP DATABASE [ASSIGNMENT_DW]&#xA;CREATE DATABASE [ASSIGNMENT_DW]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
