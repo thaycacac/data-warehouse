@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{45E28A48-FF91-4BD0-A850-7D48DC932C17}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{C86C5A01-14CB-445C-8223-FF4605BD20AB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -48,7 +48,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Dim_Currency"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -65,12 +65,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Dim_Customer"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{B0503EF0-35E2-459D-ABEB-36C296813D7E}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Customer](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[CustomerID_OP] [int] NOT NULL,&#xA;&#x9;[Title] [nvarchar](8) NOT NULL,&#xA;&#x9;[Gender] [bit] NOT NULL,&#xA;&#x9;[DOB] [date] NOT NULL,&#xA;&#x9;[Address] [nvarchar](255) NOT NULL,&#xA;&#x9;[City] [nvarchar](30) NOT NULL,&#xA;&#x9;[PostalCode] [nvarchar](15) NOT NULL,&#xA;&#x9;[FirstName] [nvarchar](50) NOT NULL,&#xA;&#x9;[MiddleName] [nvarchar](50) NOT NULL,&#xA;&#x9;[LastName] [nvarchar](50) NOT NULL,&#x9;&#xA;&#x9;[EmailAddress] [nvarchar](50) NOT NULL,&#xA;&#x9;[AddressLine1] [nvarchar](60) NOT NULL,&#xA;&#x9;[AddressLine2] [nvarchar](60) NOT NULL,&#xA;&#x9;[Phone] [nvarchar](25) NOT NULL,&#xA;&#x9;[Suffix] [nvarchar](10) NOT NULL,&#xA;&#x9;[NameStyle] [nvarchar](10) NOT NULL,&#xA;&#x9;[EmailPromotion] [nvarchar](50) NOT NULL,&#xA;&#x9;[YearlyIncome] [money] NOT NULL,&#xA;&#x9;[Occupation] [nvarchar](25) NOT NULL,&#xA;&#x9;[NumberCasOwned] [nvarchar](25) NOT NULL,&#xA;&#x9;[HomeOwnerFlag] [bit] NOT NULL,&#xA;&#x9;[StateProvince] [nvarchar](50) NOT NULL,&#xA;&#x9;[TotalChildren] [int] NOT NULL,&#xA;&#x9;[Education] [nvarchar](50) NOT NULL,&#xA;&#x9;[ZIP] [nvarchar](25) NOT NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Customer](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[CustomerID_OP] [int] NOT NULL,&#xA;&#x9;[Title] [nvarchar](8),&#xA;&#x9;[Gender] [bit],&#xA;&#x9;[DOB] [date],&#xA;&#x9;[City] [nvarchar](30) NOT NULL,&#xA;&#x9;[PostalCode] [nvarchar](15) NOT NULL,&#xA;&#x9;[FirstName] [nvarchar](50) NOT NULL,&#xA;&#x9;[MiddleName] [nvarchar](50),&#xA;&#x9;[LastName] [nvarchar](50) NOT NULL,&#x9;&#xA;&#x9;[EmailAddress] [nvarchar](50) NOT NULL,&#xA;&#x9;[AddressLine1] [nvarchar](60) NOT NULL,&#xA;&#x9;[AddressLine2] [nvarchar](60),&#xA;&#x9;[Phone] [nvarchar](25),&#xA;&#x9;[Suffix] [nvarchar](10),&#xA;&#x9;[NameStyle] [nvarchar](10) NOT NULL,&#xA;&#x9;[EmailPromotion] [nvarchar](50) NOT NULL,&#xA;&#x9;[YearlyIncome] [money],&#xA;&#x9;[Occupation] [nvarchar](25),&#xA;&#x9;[NumberCasOwned] [nvarchar](25),&#xA;&#x9;[HomeOwnerFlag] [bit],&#xA;&#x9;[StateProvince] [nvarchar](50),&#xA;&#x9;[TotalChildren] [int],&#xA;&#x9;[Education] [nvarchar](50),&#xA;&#x9;[ZIP] [nvarchar](25)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -82,7 +82,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Dim_Product"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -99,12 +99,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Dim_Promotion"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{B0503EF0-35E2-459D-ABEB-36C296813D7E}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Promotion](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[PromotionID_OP] [int] NOT NULL,&#xA;&#x9;[Type] [nvarchar](50) NOT NULL,&#xA;&#x9;[StartDate] [datetime] NOT NULL,&#xA;&#x9;[EndDate] [datetime] NOT NULL,&#xA;&#x9;[MinQty] [int] NOT NULL,&#xA;&#x9;[MaxQty] [int] NOT NULL,&#xA;&#x9;[DiscountPct] [smallmoney] NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Promotion](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[PromotionID_OP] [int] NOT NULL,&#xA;&#x9;[Type] [nvarchar](50) NOT NULL,&#xA;&#x9;[StartDate] [datetime] NOT NULL,&#xA;&#x9;[EndDate] [datetime] NOT NULL,&#xA;&#x9;[MinQty] [int],&#xA;&#x9;[MaxQty] [int] NOT NULL,&#xA;&#x9;[DiscountPct] [smallmoney] NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -121,7 +121,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{B0503EF0-35E2-459D-ABEB-36C296813D7E}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Sale_Territory](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[Group] [nvarchar](50) NOT NULL,&#xA;&#x9;[Region] [nvarchar](50) NOT NULL,&#xA;&#x9;[Country] [nvarchar](50) NOT NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Sale_Territory](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[Group] [nvarchar](50) NOT NULL,&#xA;&#x9;[Name] [nvarchar](50) NOT NULL,&#xA;&#x9;[RegionCountry] [nvarchar](50) NOT NULL&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -133,12 +133,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Create Dim_Time"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{B0503EF0-35E2-459D-ABEB-36C296813D7E}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Time](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[Day] [int] NOT NULL,&#xA;&#x9;[Month] [int] NOT NULL,&#xA;&#x9;[Year] [int] NOT NULL,&#xA;&#x9;[DayOfWeek] [varchar]&#x9;&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Time](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[Day] [int] NOT NULL,&#xA;&#x9;[Month] [int] NOT NULL,&#xA;&#x9;[Year] [int] NOT NULL,&#xA;&#x9;[DayOfWeek] [int] NOT NULL&#x9;&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -320,30 +320,30 @@
           TopLeft="536.000009128026,385.717652468368" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="576.171437723783,62.4000002917121">
+          TopLeft="576.171437723782,62.4000002917121">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-259.657148165605,81.8235311427331"
+              EndConnector="-259.657148165605,81.8235311427329"
               Start="0,0"
-              End="-259.657148165605,74.3235311427331">
+              End="-259.657148165605,74.3235311427329">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.6160894673141" />
+                    End="0,26.616089467314" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.6160894673141"
-                    Point2="0,30.6160894673141"
-                    Point3="-4,30.6160894673141" />
+                    Point1="0,26.616089467314"
+                    Point2="0,30.616089467314"
+                    Point3="-4,30.616089467314" />
                   <mssgle:LineSegment
-                    End="-255.657148165605,30.6160894673141" />
+                    End="-255.657148165605,30.616089467314" />
                   <mssgle:CubicBezierSegment
-                    Point1="-255.657148165605,30.6160894673141"
-                    Point2="-259.657148165605,30.6160894673141"
-                    Point3="-259.657148165605,34.6160894673141" />
+                    Point1="-255.657148165605,30.616089467314"
+                    Point2="-259.657148165605,30.616089467314"
+                    Point3="-259.657148165605,34.616089467314" />
                   <mssgle:LineSegment
-                    End="-259.657148165605,74.3235311427331" />
+                    End="-259.657148165605,74.3235311427329" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

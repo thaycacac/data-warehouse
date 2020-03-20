@@ -4,6 +4,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
+        <StartObjectID>ETL_Initial.dtsx</StartObjectID>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
