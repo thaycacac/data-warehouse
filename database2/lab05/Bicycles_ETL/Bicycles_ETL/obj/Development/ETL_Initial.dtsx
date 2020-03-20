@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{E29A0A55-D621-4221-8BBB-A882CC44807C}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{6FB9C4B2-1E0F-4D90-A3E2-7578174924A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7195,16 +7195,6 @@
                       name="SpecialOfferID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[Description]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].ExternalColumns[Description]"
-                      length="255"
-                      lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[Description]"
-                      name="Description"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[DiscountPct]"
                       dataType="cy"
                       errorOrTruncationOperation="Conversion"
@@ -7269,24 +7259,6 @@
                       lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[MaxQty]"
                       name="MaxQty"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[rowguid]"
-                      dataType="guid"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
-                      lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[rowguid]"
-                      name="rowguid"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
-                      lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
-                      name="ModifiedDate"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -7350,12 +7322,6 @@
                       lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[SpecialOfferID]"
                       name="SpecialOfferID" />
                     <outputColumn
-                      refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[Description]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[Description]"
-                      name="Description" />
-                    <outputColumn
                       refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[DiscountPct]"
                       dataType="cy"
                       lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[DiscountPct]"
@@ -7392,16 +7358,6 @@
                       dataType="i4"
                       lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[MaxQty]"
                       name="MaxQty" />
-                    <outputColumn
-                      refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[rowguid]"
-                      dataType="guid"
-                      lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[rowguid]"
-                      name="rowguid" />
-                    <outputColumn
-                      refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
-                      name="ModifiedDate" />
                     <outputColumn
                       refId="Package\Load Promotion\OLE DB SpecialOffer_op.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -8585,9 +8541,7 @@
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Load Time\OLE DB Destination Dim_Time.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
+                      dataType="i4"
                       name="DayOfWeek" />
                   </externalMetadataColumns>
                 </input>
@@ -9521,6 +9475,10 @@
           Id="Package\Load Product"
           TopLeft="168.666659964456,155.306667900933" />
         <NodeLayout
+          Size="152,41.6"
+          Id="Package\Load Promotion"
+          TopLeft="825.599967416129,160.160001272837" />
+        <NodeLayout
           Size="164,41.6"
           Id="Package\Load SaleTerritory"
           TopLeft="641.733308087454,162.613334479437" />
@@ -9588,6 +9546,74 @@
                     Point3="-188.133325015175,34.9463418323239" />
                   <mssgle:LineSegment
                     End="-188.133325015175,75.7000009918215" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="723.733308087454,204.213334479437">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-240.533324035007,109.600001322429"
+              Start="0,0"
+              End="-240.533324035007,102.100001322429">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.9275957201224" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60.9275957201224"
+                    Point2="0,64.9275957201224"
+                    Point3="-4,64.9275957201224" />
+                  <mssgle:LineSegment
+                    End="-236.533324035007,64.9275957201224" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-236.533324035007,64.9275957201224"
+                    Point2="-240.533324035007,64.9275957201224"
+                    Point3="-240.533324035007,68.9275957201224" />
+                  <mssgle:LineSegment
+                    End="-240.533324035007,102.100001322429" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="545.86664788458,204.213334479438">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-73.7904733559427,109.600001322429"
+              Start="0,0"
+              End="-73.7904733559427,102.100001322429">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.7124769208899" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.7124769208899"
+                    Point2="0,49.7124769208899"
+                    Point3="-4,49.7124769208899" />
+                  <mssgle:LineSegment
+                    End="-69.7904733559427,49.7124769208899" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-69.7904733559427,49.7124769208899"
+                    Point2="-73.7904733559427,49.7124769208899"
+                    Point3="-73.7904733559427,53.7124769208899" />
+                  <mssgle:LineSegment
+                    End="-73.7904733559427,102.100001322429" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9698,10 +9724,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Load Promotion"
-          TopLeft="825.599967416129,160.160001272837" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="516.399984979631,72.1066669091119">
@@ -9864,74 +9886,6 @@
                     Point3="-402.826650030349,83.2847067246055" />
                   <mssgle:LineSegment
                     End="-402.826650030349,104.553334529029" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="723.733308087454,204.213334479437">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-240.533324035007,109.600001322429"
-              Start="0,0"
-              End="-240.533324035007,102.100001322429">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60.9275957201224" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,60.9275957201224"
-                    Point2="0,64.9275957201224"
-                    Point3="-4,64.9275957201224" />
-                  <mssgle:LineSegment
-                    End="-236.533324035007,64.9275957201224" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-236.533324035007,64.9275957201224"
-                    Point2="-240.533324035007,64.9275957201224"
-                    Point3="-240.533324035007,68.9275957201224" />
-                  <mssgle:LineSegment
-                    End="-240.533324035007,102.100001322429" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="545.86664788458,204.213334479438">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-73.7904733559427,109.600001322429"
-              Start="0,0"
-              End="-73.7904733559427,102.100001322429">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.7124769208899" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.7124769208899"
-                    Point2="0,49.7124769208899"
-                    Point3="-4,49.7124769208899" />
-                  <mssgle:LineSegment
-                    End="-69.7904733559427,49.7124769208899" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-69.7904733559427,49.7124769208899"
-                    Point2="-73.7904733559427,49.7124769208899"
-                    Point3="-73.7904733559427,53.7124769208899" />
-                  <mssgle:LineSegment
-                    End="-73.7904733559427,102.100001322429" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10430,7 +10384,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Customer\OLE DB Individual_op">
+    design-time-name="Package\Load Customer\OLE DB CustomerAddress_op">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10443,7 +10397,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Customer\OLE DB CustomerAddress_op">
+    design-time-name="Package\Load Customer\OLE DB Individual_op">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10470,6 +10424,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Customer\OLE DB Contact_op">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Customer\OLE DB Dim_Customer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10806,6 +10773,70 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Load Promotion">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="193.6,41.6"
+          Id="Package\Load Promotion\OLE DB SpecialOffer_op"
+          TopLeft="420.8,100.8" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Load Promotion\OLE DB Destination"
+          TopLeft="438.4,272.8" />
+        <EdgeLayout
+          Id="Package\Load Promotion.Paths[OLE DB Source Output]"
+          TopLeft="520.8,142.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,130.4"
+              Start="0,0"
+              End="0,122.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,122.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Promotion\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Promotion\OLE DB SpecialOffer_op">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Load SaleTerritory">
     <LayoutInfo>
       <GraphLayout
@@ -10971,11 +11002,50 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load SaleTerritory\OLE DB Dim_SalesTerritory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load SaleTerritory\OLE DB Country Region_op">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load SaleTerritory\OLE DB SaleTerritory_op">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Time">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="259.2,41.6"
           Id="Package\Load Time\OLE DB Source SalesOrderHeader_op 1 1"
@@ -11019,9 +11089,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11055,9 +11123,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11079,9 +11145,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11115,9 +11179,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11139,9 +11201,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11188,122 +11248,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Time\OLE DB Destination Dim_Time">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Customer\OLE DB Dim_Customer">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load SaleTerritory\OLE DB SaleTerritory_op">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load SaleTerritory\OLE DB Country Region_op">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load Promotion">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="193.6,41.6"
-          Id="Package\Load Promotion\OLE DB SpecialOffer_op"
-          TopLeft="420.8,100.8" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Load Promotion\OLE DB Destination"
-          TopLeft="438.4,272.8" />
-        <EdgeLayout
-          Id="Package\Load Promotion.Paths[OLE DB Source Output]"
-          TopLeft="520.8,142.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,130.4"
-              Start="0,0"
-              End="0,122.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,122.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Promotion\OLE DB SpecialOffer_op">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Promotion\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load SaleTerritory\OLE DB Dim_SalesTerritory">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
