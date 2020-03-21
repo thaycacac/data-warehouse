@@ -25,3 +25,9 @@ on their clients, namely their surname, first name, "middle name" in the United 
 Your analysis should also follow the currency in which internet sales are are made (Euro, US $ ...) and the amount paid in that currency, but without going into the detail of exchange rates.
 
 Of course, the margin will be studied closely, and therefore the costs of the products sold and the amount of tax will have to be taken into account. Note that, since this company has sales in Canada, the United States and various countries Hispanics in South America such as Mexico, VAT rates may change in function of the sale. The price of delivery (freight) will also be taken into account because it will have a direct impact on the margin, obviously.
+
+# Question:
+
+4.	Use SQL Server Business Intelligence Development Studio to create a new Integration Services project named Bicycles_ETL.sln. In this project, you will create a new Package named Create_DW.dtsx. In this package, you will create the multi dimension database (data warehouse) and the corresponding tables. Specifically, in this package, you have a “control flow” in which you can add different tasks to this control flow. These task can be organized sequentially or parallel, as shown in the following figure. In fact, you have to create a “SQL query task” for creating the database or for creating each table. And for each task, you could put your Transact-SQL code in the “SQL-query” field corresponding to the task you want.
+
+5.	In the project Bicycles_ETL.sln, create a new package named Populate_Decisional_DB.dtsx. In this package, you will create different “data flow task” in order to feed (ETL process) your data warehouse from the operational database as well as the weather data from the excel file. An example of the ETL process is given in the following figure.

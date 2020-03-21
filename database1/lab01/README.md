@@ -1,1 +1,0 @@
-### Question: give the entity relationship diagram of the operational database of the system.
