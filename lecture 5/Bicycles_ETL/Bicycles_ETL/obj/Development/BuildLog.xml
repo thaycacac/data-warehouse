@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Bicycles_ETL</Name>
-    <LastWriteTime>2020-03-24T03:30:53.6521208Z</LastWriteTime>
+    <LastWriteTime>2020-03-26T07:18:43.4649568Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Create_DW.dtsx</Name>
-      <LastWriteTime>2020-03-24T03:30:31.0321627Z</LastWriteTime>
+      <LastWriteTime>2020-03-26T07:17:29.6660155Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ETL_Initial.dtsx</Name>
-      <LastWriteTime>2020-03-24T03:30:51.2290755Z</LastWriteTime>
+      <LastWriteTime>2020-03-26T07:18:39.3043665Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
