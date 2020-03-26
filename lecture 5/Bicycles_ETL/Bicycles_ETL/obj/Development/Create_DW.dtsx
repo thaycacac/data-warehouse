@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="65"
-  DTS:VersionGUID="{993E199E-5B44-41A7-B78B-5F3724316E28}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{9B1A3E05-B6C7-4A5A-A671-2C789FC0465C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -70,7 +70,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{B0503EF0-35E2-459D-ABEB-36C296813D7E}"
-          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Customer](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[CustomerID_OP] [int],&#xA;&#x9;[Title] [nvarchar](8),&#xA;&#x9;[Gender] [nvarchar](10),&#xA;&#x9;[DOB] [date],&#xA;&#x9;[City] [nvarchar](30),&#xA;&#x9;[PostalCode] [nvarchar](15),&#xA;&#x9;[Suffix] [nvarchar](30),&#xA;&#x9;[FirstName] [nvarchar](255) NOT NULL,&#xA;&#x9;[MiddleName] [nvarchar](255),&#xA;&#x9;[LastName] [nvarchar](255) NOT NULL,&#x9;&#xA;&#x9;[EmailAddress] [nvarchar](50),&#xA;&#x9;[AddressLine1] [nvarchar](255),&#xA;&#x9;[AddressLine2] [nvarchar](255),&#xA;&#x9;[Phone] [nvarchar](255),&#xA;&#x9;[EmailPromotion] [nvarchar](50),&#xA;&#x9;[YearlyIncome] [nvarchar](30),&#xA;&#x9;[Occupation] [nvarchar](255),&#xA;&#x9;[StateProvince] [nvarchar](255),&#xA;&#x9;[CountryRegion] [nvarchar](255),&#xA;&#x9;[TotalChildren] [int],&#xA;&#x9;[NumberChildrenAtHome] [int],&#xA;&#x9;[Education] [nvarchar](255),&#xA;&#x9;[MaritalStatus] [nvarchar](10),&#xA;&#x9;[HouseOwnerFlag] [bit],&#xA;&#x9;[NumberCarsOwned] [int]&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Dim_Customer](&#xA;&#x9;[id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;[CustomerID_OP] [int],&#xA;&#x9;[Title] [nvarchar](8),&#xA;&#x9;[Gender] [nvarchar](10),&#xA;&#x9;[DOB] [date],&#xA;&#x9;[City] [nvarchar](30),&#xA;&#x9;[PostalCode] [nvarchar](15),&#xA;&#x9;[Suffix] [nvarchar](30),&#xA;&#x9;[FirstName] [nvarchar](255) NOT NULL,&#xA;&#x9;[MiddleName] [nvarchar](255),&#xA;&#x9;[LastName] [nvarchar](255) NOT NULL,&#x9;&#xA;&#x9;[EmailAddress] [nvarchar](50),&#xA;&#x9;[AddressLine1] [nvarchar](255),&#xA;&#x9;[AddressLine2] [nvarchar](255),&#xA;&#x9;[Phone] [nvarchar](255),&#xA;&#x9;[EmailPromotion] [nvarchar](50),&#xA;&#x9;[YearlyIncome] [nvarchar](30),&#xA;&#x9;[Occupation] [nvarchar](255),&#xA;&#x9;[StateProvince] [nvarchar](255),&#xA;&#x9;[CountryRegion] [nvarchar](255),&#xA;&#x9;[TotalChildren] [int],&#xA;&#x9;[NumberChildrenAtHome] [int],&#xA;&#x9;[Education] [nvarchar](255),&#xA;&#x9;[MaritalStatus] [nvarchar](50),&#xA;&#x9;[HouseOwnerFlag] [bit],&#xA;&#x9;[NumberCarsOwned] [int]&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
