@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="125"
-  DTS:VersionGUID="{C3F4824A-5B9A-4EF3-93AA-EED013AC9386}">
+  DTS:VersionBuild="129"
+  DTS:VersionGUID="{87D47E75-88A8-478F-835B-D363A48D7A2C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -164,7 +164,6 @@
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="ToCurrencyCode"
-                      cachedSortKeyPosition="2"
                       lineageId="Package\Load Currency\Sort.Outputs[Sort Output].Columns[ToCurrencyCode]" />
                     <inputColumn
                       refId="Package\Load Currency\Merge Join.Inputs[Merge Join Left Input].Columns[AverageRate]"
@@ -1106,7 +1105,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -1165,8 +1164,7 @@
                       dataType="wstr"
                       length="3"
                       lineageId="Package\Load Currency\Sort.Outputs[Sort Output].Columns[ToCurrencyCode]"
-                      name="ToCurrencyCode"
-                      sortKeyPosition="2">
+                      name="ToCurrencyCode">
                       <properties>
                         <property
                           containsID="true"
@@ -6128,7 +6126,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">1</property>
+                  typeConverter="JoinType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -6445,167 +6443,6 @@
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           name="InputColumnID">#{Package\Load Fact\Merge Join.Inputs[Merge Join Left Input].Columns[UnitPrice]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Fact\Merge Join 1"
-              componentClassID="Microsoft.MergeJoin"
-              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
-              name="Merge Join 1"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of join to perform."
-                  name="JoinType"
-                  typeConverter="JoinType">2</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the number of columns in the ordering key."
-                  name="NumKeyColumns">2</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the null values are treated as equal values."
-                  name="TreatNullsAsEqual">true</property>
-                <property
-                  dataType="System.Int32"
-                  description="Indicates the requested maximum buffers per input before blocking."
-                  name="MaxBuffersPerInput">5</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Left Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[SpecialOfferID]"
-                      cachedDataType="i4"
-                      cachedName="SpecialOfferID"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SpecialOfferID]" />
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[SalesOrderID]"
-                      cachedDataType="i4"
-                      cachedName="SalesOrderID"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SalesOrderID]" />
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[ProductID]" />
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[OrderQty]"
-                      cachedDataType="i2"
-                      cachedName="OrderQty"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[OrderQty]" />
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[UnitPrice]"
-                      cachedDataType="cy"
-                      cachedName="UnitPrice"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[UnitPrice]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Right Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Right Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Right Input].Columns[SpecialOfferID]"
-                      cachedDataType="i4"
-                      cachedName="SpecialOfferID"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Load Fact\Sort 1.Outputs[Sort Output].Columns[SpecialOfferID]" />
-                    <inputColumn
-                      refId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Right Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\Load Fact\Sort 1.Outputs[Sort Output].Columns[ProductID]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output]"
-                  isSorted="true"
-                  name="Merge Join Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[ProductID]"
-                      name="ProductID"
-                      sortKeyPosition="2">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Fact\Merge Join 1.Inputs[Merge Join Right Input].Columns[ProductID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SpecialOfferID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SpecialOfferID]"
-                      name="SpecialOfferID"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Fact\Merge Join 1.Inputs[Merge Join Right Input].Columns[SpecialOfferID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SalesOrderID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SalesOrderID]"
-                      name="SalesOrderID">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[SalesOrderID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[OrderQty]"
-                      dataType="i2"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[OrderQty]"
-                      name="OrderQty">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[OrderQty]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[UnitPrice]"
-                      dataType="cy"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[UnitPrice]"
-                      name="UnitPrice">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input].Columns[UnitPrice]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -11374,138 +11211,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\Load Fact\OLE DB SpecialOfferProduct_op"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB SpecialOfferProduct_op"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Sales].[SpecialOfferProduct]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-G4NBSB1.Projet_Relationnel]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G4NBSB1.Projet_Relationnel]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].ExternalColumns[SpecialOfferID]"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]"
-                      name="SpecialOfferID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      name="ProductID"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].ExternalColumns[SpecialOfferID]"
-                      dataType="i4"
-                      name="SpecialOfferID" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      dataType="i4"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
-                      dataType="guid"
-                      name="rowguid" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      name="ModifiedDate" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[SpecialOfferID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[SpecialOfferID]"
-                      name="SpecialOfferID" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      name="ProductID" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Load Fact\OLE DB Territory_dw"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -11839,6 +11544,184 @@
               </outputs>
             </component>
             <component
+              refId="Package\Load Fact\OLE DB Time_dw_2"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Time_dw_2"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Dim_Time]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Fact\OLE DB Time_dw_2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-G4NBSB1.ASSIGNMENT_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G4NBSB1.ASSIGNMENT_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Day]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[Day]"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Day]"
+                      name="Day"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[Month]"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[DayOfWeek]"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]"
+                      name="DayOfWeek"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[Day]"
+                      dataType="i4"
+                      name="Day" />
+                    <externalMetadataColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[Month]"
+                      dataType="i4"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].ExternalColumns[DayOfWeek]"
+                      dataType="i4"
+                      name="DayOfWeek" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[Day]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[Day]"
+                      name="Day" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[Month]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[Month]"
+                      name="Month" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[DayOfWeek]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[DayOfWeek]"
+                      name="DayOfWeek" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Load Fact\OLE DB Time_dw_3"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -12011,496 +11894,6 @@
                       lineageId="Package\Load Fact\OLE DB Time_dw_3.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Fact\OLE DB Time_dư_2"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Time_dư_2"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Dim_Time]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load Fact\OLE DB Time_dư_2.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-G4NBSB1.ASSIGNMENT_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G4NBSB1.ASSIGNMENT_DW]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[id]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[id]"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Day]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[Day]"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Day]"
-                      name="Day"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Month]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[Month]"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Month]"
-                      name="Month"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Year]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[Year]"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Year]"
-                      name="Year"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[DayOfWeek]"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]"
-                      name="DayOfWeek"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[id]"
-                      dataType="i4"
-                      name="id" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[Day]"
-                      dataType="i4"
-                      name="Day" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[Month]"
-                      dataType="i4"
-                      name="Month" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[Year]"
-                      dataType="i4"
-                      name="Year" />
-                    <externalMetadataColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].ExternalColumns[DayOfWeek]"
-                      dataType="i4"
-                      name="DayOfWeek" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[id]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[id]"
-                      name="id" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[Day]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[Day]"
-                      name="Day" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[Month]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[Month]"
-                      name="Month" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[Year]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[Year]"
-                      name="Year" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[DayOfWeek]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[DayOfWeek]"
-                      name="DayOfWeek" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Fact\Sort"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Load Fact\Sort.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort.Inputs[Sort Input].Columns[SalesOrderID]"
-                      cachedDataType="i4"
-                      cachedName="SalesOrderID"
-                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SalesOrderID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort.Inputs[Sort Input].Columns[SalesOrderDetailID]"
-                      cachedDataType="i4"
-                      cachedName="SalesOrderDetailID"
-                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SalesOrderDetailID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort.Inputs[Sort Input].Columns[SpecialOfferID]"
-                      cachedDataType="i4"
-                      cachedName="SpecialOfferID"
-                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort.Inputs[Sort Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort.Inputs[Sort Input].Columns[OrderQty]"
-                      cachedDataType="i2"
-                      cachedName="OrderQty"
-                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[OrderQty]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort.Inputs[Sort Input].Columns[UnitPrice]"
-                      cachedDataType="cy"
-                      cachedName="UnitPrice"
-                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[UnitPrice]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Fact\Sort.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SalesOrderID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SalesOrderID]"
-                      name="SalesOrderID">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SalesOrderID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SalesOrderDetailID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SalesOrderDetailID]"
-                      name="SalesOrderDetailID">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SalesOrderDetailID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SpecialOfferID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[SpecialOfferID]"
-                      name="SpecialOfferID"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[ProductID]"
-                      name="ProductID"
-                      sortKeyPosition="2">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[ProductID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[OrderQty]"
-                      dataType="i2"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[OrderQty]"
-                      name="OrderQty">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[OrderQty]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[UnitPrice]"
-                      dataType="cy"
-                      lineageId="Package\Load Fact\Sort.Outputs[Sort Output].Columns[UnitPrice]"
-                      name="UnitPrice">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[UnitPrice]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Fact\Sort 1"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort 1"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Load Fact\Sort 1.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort 1.Inputs[Sort Input].Columns[SpecialOfferID]"
-                      cachedDataType="i4"
-                      cachedName="SpecialOfferID"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Fact\Sort 1.Inputs[Sort Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      lineageId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Fact\Sort 1.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort 1.Outputs[Sort Output].Columns[SpecialOfferID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Sort 1.Outputs[Sort Output].Columns[SpecialOfferID]"
-                      name="SpecialOfferID"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Fact\Sort 1.Outputs[Sort Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Load Fact\Sort 1.Outputs[Sort Output].Columns[ProductID]"
-                      name="ProductID"
-                      sortKeyPosition="2">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output].Columns[ProductID]}</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -15221,7 +14614,7 @@
                       refId="Package\Load Fact\Sort 17.Inputs[Sort Input].Columns[id]"
                       cachedDataType="i4"
                       cachedName="id"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[id]">
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[id]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15237,7 +14630,7 @@
                       refId="Package\Load Fact\Sort 17.Inputs[Sort Input].Columns[Day]"
                       cachedDataType="i4"
                       cachedName="Day"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Day]">
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Day]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15253,7 +14646,7 @@
                       refId="Package\Load Fact\Sort 17.Inputs[Sort Input].Columns[Month]"
                       cachedDataType="i4"
                       cachedName="Month"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Month]">
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Month]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15269,7 +14662,7 @@
                       refId="Package\Load Fact\Sort 17.Inputs[Sort Input].Columns[Year]"
                       cachedDataType="i4"
                       cachedName="Year"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Year]">
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Year]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15285,7 +14678,7 @@
                       refId="Package\Load Fact\Sort 17.Inputs[Sort Input].Columns[DayOfWeek]"
                       cachedDataType="i4"
                       cachedName="DayOfWeek"
-                      lineageId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]">
+                      lineageId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15317,7 +14710,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[id]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[id]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -15331,7 +14724,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Day]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Day]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -15345,7 +14738,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Month]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Month]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -15359,7 +14752,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[Year]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[Year]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -15372,7 +14765,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output].Columns[DayOfWeek]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -16127,8 +15520,7 @@
                       refId="Package\Load Fact\Sort 2.Inputs[Sort Input].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[ProductID]">
+                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[ProductID]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16144,8 +15536,7 @@
                       refId="Package\Load Fact\Sort 2.Inputs[Sort Input].Columns[SpecialOfferID]"
                       cachedDataType="i4"
                       cachedName="SpecialOfferID"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SpecialOfferID]">
+                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16161,7 +15552,7 @@
                       refId="Package\Load Fact\Sort 2.Inputs[Sort Input].Columns[SalesOrderID]"
                       cachedDataType="i4"
                       cachedName="SalesOrderID"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SalesOrderID]">
+                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SalesOrderID]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16177,7 +15568,7 @@
                       refId="Package\Load Fact\Sort 2.Inputs[Sort Input].Columns[OrderQty]"
                       cachedDataType="i2"
                       cachedName="OrderQty"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[OrderQty]">
+                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[OrderQty]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16193,7 +15584,7 @@
                       refId="Package\Load Fact\Sort 2.Inputs[Sort Input].Columns[UnitPrice]"
                       cachedDataType="cy"
                       cachedName="UnitPrice"
-                      lineageId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[UnitPrice]">
+                      lineageId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[UnitPrice]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16225,7 +15616,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[ProductID]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[ProductID]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -16238,7 +15629,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SpecialOfferID]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SpecialOfferID]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -16252,7 +15643,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[SalesOrderID]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[SalesOrderID]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -16265,7 +15656,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[OrderQty]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[OrderQty]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -16278,7 +15669,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Fact\Merge Join 1.Outputs[Merge Join Output].Columns[UnitPrice]}</property>
+                          name="SortColumnId">#{Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output].Columns[UnitPrice]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -19041,199 +18432,179 @@
               startId="Package\Load Fact\Merge Join 9.Outputs[Merge Join Output]" />
             <path
               refId="Package\Load Fact.Paths[Merge Join Output2]"
-              endId="Package\Load Fact\Sort 2.Inputs[Sort Input]"
-              name="Merge Join Output"
-              startId="Package\Load Fact\Merge Join 1.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Merge Join Output3]"
               endId="Package\Load Fact\Sort 4.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join 4.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[Merge Join Output4]"
+              refId="Package\Load Fact.Paths[Merge Join Output3]"
               endId="Package\Load Fact\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join 8.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[Merge Join Output5]"
+              refId="Package\Load Fact.Paths[Merge Join Output4]"
               endId="Package\Load Fact\Sort 10.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join 3.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[Merge Join Output6]"
+              refId="Package\Load Fact.Paths[Merge Join Output5]"
               endId="Package\Load Fact\Derived Column.Inputs[Derived Column Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join 6.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[Merge Join Output7]"
+              refId="Package\Load Fact.Paths[Merge Join Output6]"
               endId="Package\Load Fact\Sort 8.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join 2.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[Merge Join Output8]"
+              refId="Package\Load Fact.Paths[Merge Join Output7]"
               endId="Package\Load Fact\Sort 6.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[Merge Join Output9]"
+              refId="Package\Load Fact.Paths[Merge Join Output8]"
               endId="Package\Load Fact\Sort 12.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Load Fact\Merge Join 5.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output10]"
-              endId="Package\Load Fact\Sort 17.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Time_dư_2.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output8]"
-              endId="Package\Load Fact\Sort 15.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Time_dw.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output7]"
-              endId="Package\Load Fact\Sort 3.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB SalesOrderHeader_op.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output6]"
-              endId="Package\Load Fact\Sort 1.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB SpecialOfferProduct_op.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output5]"
-              endId="Package\Load Fact\Sort 7.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Promotion_dw.Outputs[OLE DB Source Output]" />
-            <path
               refId="Package\Load Fact.Paths[OLE DB Source Output9]"
-              endId="Package\Load Fact\Sort 13.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Currency_dw.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output3]"
-              endId="Package\Load Fact\Sort 9.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Customer_dw.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output2]"
-              endId="Package\Load Fact\Sort 19.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Time_dw_3.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output1]"
               endId="Package\Load Fact\Sort 11.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Load Fact\OLE DB Territory_dw.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output]"
-              endId="Package\Load Fact\Sort.Inputs[Sort Input]"
+              refId="Package\Load Fact.Paths[OLE DB Source Output7]"
+              endId="Package\Load Fact\Sort 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output4]"
+              refId="Package\Load Fact.Paths[OLE DB Source Output6]"
               endId="Package\Load Fact\Sort 5.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Load Fact\OLE DB Product_dw.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output17]"
-              endId="Package\Load Fact\Merge Join.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 4.Outputs[Sort Output]" />
+              refId="Package\Load Fact.Paths[OLE DB Source Output5]"
+              endId="Package\Load Fact\Sort 9.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Customer_dw.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output16]"
-              endId="Package\Load Fact\Merge Join.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 5.Outputs[Sort Output]" />
+              refId="Package\Load Fact.Paths[OLE DB Source Output8]"
+              endId="Package\Load Fact\Sort 19.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Time_dw_3.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output3]"
+              endId="Package\Load Fact\Sort 7.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Promotion_dw.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output2]"
+              endId="Package\Load Fact\Sort 3.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB SalesOrderHeader_op.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output1]"
+              endId="Package\Load Fact\Sort 15.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Time_dw.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output]"
+              endId="Package\Load Fact\Sort 13.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Currency_dw.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output4]"
+              endId="Package\Load Fact\Sort 17.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[Sort Output15]"
-              endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 8.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output14]"
-              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 3.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output13]"
-              endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 11.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output12]"
-              endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 13.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output11]"
-              endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 7.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output10]"
-              endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 6.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output9]"
-              endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 18.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output7]"
-              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output6]"
-              endId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 1.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output5]"
-              endId="Package\Load Fact\Merge Join 1.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output4]"
-              endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 12.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output3]"
-              endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 15.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output2]"
-              endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 14.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output1]"
-              endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort 16.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output]"
               endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort 10.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output18]"
-              endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Right Input]"
+              refId="Package\Load Fact.Paths[Sort Output14]"
+              endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Load Fact\Sort 17.Outputs[Sort Output]" />
+              startId="Package\Load Fact\Sort 16.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output8]"
+              refId="Package\Load Fact.Paths[Sort Output13]"
+              endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 14.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output12]"
+              endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 15.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output11]"
+              endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 12.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output10]"
+              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output9]"
               endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort 19.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output19]"
+              refId="Package\Load Fact.Paths[Sort Output8]"
+              endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 6.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output6]"
+              endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 11.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output5]"
+              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 3.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output4]"
+              endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 8.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output3]"
+              endId="Package\Load Fact\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 5.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output2]"
+              endId="Package\Load Fact\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 4.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output1]"
+              endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 17.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output]"
               endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort 9.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output16]"
+              endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 7.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output7]"
+              endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 13.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output17]"
+              endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort 18.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -26165,17 +25536,21 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Load Customer\Sort"
-          TopLeft="360.000006130764,508.800002917121" />
+          Size="170.4,41.6"
+          Id="Package\Load Customer\OLE DB Destination"
+          TopLeft="590.408173319897,850.873957249533" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Load Customer\Data Conversion"
+          TopLeft="774.693890743979,638.4537833021" />
+        <NodeLayout
+          Size="244,41.6"
+          Id="Package\Load Customer\OLE DB IndividualDemoGraphic_op"
+          TopLeft="558.857152374424,392.564707169318" />
         <NodeLayout
           Size="120,41.6"
           Id="Package\Load Customer\Union All"
           TopLeft="614.285724746938,733.73109703328" />
-        <NodeLayout
-          Size="225.6,41.6"
-          Id="Package\Load Customer\OLE DB IndividualCustomer_op"
-          TopLeft="290.285719229251,393.788236598243" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Load Customer\Sort 1"
@@ -26185,73 +25560,17 @@
           Id="Package\Load Customer\Merge Join"
           TopLeft="474.285722362752,633.88235613714" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load Customer\OLE DB Destination"
-          TopLeft="590.408173319897,850.873957249533" />
+          Size="225.6,41.6"
+          Id="Package\Load Customer\OLE DB IndividualCustomer_op"
+          TopLeft="290.285719229251,393.788236598243" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Load Customer\Sort"
+          TopLeft="360.000006130764,508.800002917121" />
         <NodeLayout
           Size="140,41.6"
           Id="Package\Load Customer\Excel Source"
           TopLeft="776.672091413341,522.455125077548" />
-        <NodeLayout
-          Size="244,41.6"
-          Id="Package\Load Customer\OLE DB IndividualDemoGraphic_op"
-          TopLeft="558.857152374424,392.564707169318" />
-        <EdgeLayout
-          Id="Package\Load Customer.Paths[Union All Output 1]"
-          TopLeft="674.946949033418,775.33109703328">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,75.5428602162535"
-              Start="0,0"
-              End="0,68.0428602162535">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,68.0428602162535" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Customer.Paths[Sort Output1]"
-          TopLeft="682.914296438256,546.729414630349">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-123.561907408837,87.1529415067913"
-              Start="0,0"
-              End="-123.561907408837,79.6529415067913">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.6540604540251" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47.6540604540251"
-                    Point2="0,51.6540604540251"
-                    Point3="-4,51.6540604540251" />
-                  <mssgle:LineSegment
-                    End="-119.561907408837,51.6540604540251" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-119.561907408837,51.6540604540251"
-                    Point2="-123.561907408837,51.6540604540251"
-                    Point3="-123.561907408837,55.6540604540251" />
-                  <mssgle:LineSegment
-                    End="-123.561907408837,79.6529415067913" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Customer.Paths[Sort Output]"
           TopLeft="408.800006130764,550.400002917121">
@@ -26364,10 +25683,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Load Customer\Data Conversion"
-          TopLeft="774.693890743979,638.4537833021" />
         <EdgeLayout
           Id="Package\Load Customer.Paths[Excel Source Output]"
           TopLeft="849.48299107866,564.055125077548">
@@ -26424,37 +25739,67 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Customer.Paths[Union All Output 1]"
+          TopLeft="674.946949033418,775.33109703328">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.5428602162535"
+              Start="0,0"
+              End="0,68.0428602162535">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.0428602162535" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Customer.Paths[Sort Output1]"
+          TopLeft="682.914296438256,546.729414630349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-123.561907408837,87.1529415067913"
+              Start="0,0"
+              End="-123.561907408837,79.6529415067913">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.6540604540251" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.6540604540251"
+                    Point2="0,51.6540604540251"
+                    Point3="-4,51.6540604540251" />
+                  <mssgle:LineSegment
+                    End="-119.561907408837,51.6540604540251" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-119.561907408837,51.6540604540251"
+                    Point2="-123.561907408837,51.6540604540251"
+                    Point3="-123.561907408837,55.6540604540251" />
+                  <mssgle:LineSegment
+                    End="-123.561907408837,79.6529415067913" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Customer\OLE DB IndividualCustomer_op">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Load Customer\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Customer\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -26479,6 +25824,32 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Customer\OLE DB IndividualCustomer_op">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Customer\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Fact">
     <LayoutInfo>
@@ -26496,10 +25867,6 @@
           Size="183.2,41.6"
           Id="Package\Load Fact\OLE DB Customer_dw"
           TopLeft="760.952350714851,868.03809733194" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Load Fact\Sort"
-          TopLeft="71.3333304988018,148.700953844282" />
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\Load Fact\OLE DB Time_dw"
@@ -26553,9 +25920,9 @@
           Id="Package\Load Fact\OLE DB SalesOrderHeader_op"
           TopLeft="411.771421873003,241.980953884427" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Load Fact\OLE DB Time_dư_2"
-          TopLeft="1206.54542593523,1788.07272894079" />
+          Size="172.8,41.6"
+          Id="Package\Load Fact\OLE DB Time_dw_3"
+          TopLeft="1319.5151225196,1994.52121289263" />
         <NodeLayout
           Size="112,41.6"
           Id="Package\Load Fact\Sort 14"
@@ -26605,17 +25972,9 @@
           Id="Package\Load Fact\Sort 11"
           TopLeft="912.8,1199.2" />
         <NodeLayout
-          Size="229.6,41.6"
-          Id="Package\Load Fact\OLE DB SpecialOfferProduct_op"
-          TopLeft="262.952370503593,60.5485721913292" />
-        <NodeLayout
           Size="106.4,41.6"
           Id="Package\Load Fact\Sort 4"
           TopLeft="351.733319452074,548.746667454614" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Load Fact\Sort 1"
-          TopLeft="317.238082632187,147.215239546761" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load Fact\Merge Join 7"
@@ -26639,365 +25998,21 @@
         <NodeLayout
           Size="216,41.6"
           Id="Package\Load Fact\OLE DB SalesOrderDetail_op"
-          TopLeft="14.8571422667743,61.8361912491813" />
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Load Fact\Merge Join 1"
-          TopLeft="174.399993165334,251.626667801751" />
+          TopLeft="139.619049153362,239.247958443197" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Load Fact\Derived Column"
           TopLeft="906.4,1591.2" />
         <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\Load Fact\OLE DB Time_dw_3"
-          TopLeft="1319.5151225196,1994.52121289263" />
+          Size="172,41.6"
+          Id="Package\Load Fact\OLE DB Time_dw_2"
+          TopLeft="1206.54542593523,1788.07272894079" />
         <NodeLayout
           Size="112,41.6"
           Id="Package\Load Fact\Sort 15"
           TopLeft="1145.6,1684.8" />
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output4]"
-          TopLeft="872,1423.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="90.6666666666669,76.8000000000002"
-              Start="0,0"
-              End="90.6666666666669,69.3000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5533714285715" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.5533714285715"
-                    Point2="0,45.5533714285715"
-                    Point3="4,45.5533714285715" />
-                  <mssgle:LineSegment
-                    End="86.6666666666669,45.5533714285715" />
-                  <mssgle:CubicBezierSegment
-                    Point1="86.6666666666669,45.5533714285715"
-                    Point2="90.6666666666669,45.5533714285715"
-                    Point3="90.6666666666669,49.5533714285715" />
-                  <mssgle:LineSegment
-                    End="90.6666666666669,69.3000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output5]"
-          TopLeft="120.133330498802,190.300953844282">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="101.733329333199,61.3257139574688"
-              Start="0,0"
-              End="101.733329333199,53.8257139574688">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.3749091930586" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.3749091930586"
-                    Point2="0,36.3749091930586"
-                    Point3="4,36.3749091930586" />
-                  <mssgle:LineSegment
-                    End="97.7333293331993,36.3749091930586" />
-                  <mssgle:CubicBezierSegment
-                    Point1="97.7333293331993,36.3749091930586"
-                    Point2="101.733329333199,36.3749091930586"
-                    Point3="101.733329333199,40.3749091930586" />
-                  <mssgle:LineSegment
-                    End="101.733329333199,53.8257139574688" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Load Fact.Paths[Sort Output6]"
-          TopLeft="370.438082632187,188.815239546761">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-105.104756133519,62.8114282549901"
-              Start="0,0"
-              End="-105.104756133519,55.3114282549901">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.2561500163884" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.2561500163884"
-                    Point2="0,37.2561500163884"
-                    Point3="-4,37.2561500163884" />
-                  <mssgle:LineSegment
-                    End="-101.104756133519,37.2561500163884" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-101.104756133519,37.2561500163884"
-                    Point2="-105.104756133519,37.2561500163884"
-                    Point3="-105.104756133519,41.2561500163884" />
-                  <mssgle:LineSegment
-                    End="-105.104756133519,55.3114282549901" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output7]"
-          TopLeft="248.266659010782,387.893334495968">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="131.599994542864,64.9600004463196"
-              Start="0,0"
-              End="131.599994542864,57.4600004463196">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5305602647313" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5305602647313"
-                    Point2="0,38.5305602647313"
-                    Point3="4,38.5305602647313" />
-                  <mssgle:LineSegment
-                    End="127.599994542864,38.5305602647313" />
-                  <mssgle:CubicBezierSegment
-                    Point1="127.599994542864,38.5305602647313"
-                    Point2="131.599994542864,38.5305602647313"
-                    Point3="131.599994542864,42.5305602647313" />
-                  <mssgle:LineSegment
-                    End="131.599994542864,57.4600004463196" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output8]"
-          TopLeft="1401.09088344285,2130.18181897828">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-74.7636320046702,58.7636365139124"
-              Start="0,0"
-              End="-74.7636320046702,51.2636365139124">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.8552312579663" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.8552312579663"
-                    Point2="0,34.8552312579663"
-                    Point3="-4,34.8552312579663" />
-                  <mssgle:LineSegment
-                    End="-70.7636320046702,34.8552312579663" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-70.7636320046702,34.8552312579663"
-                    Point2="-74.7636320046702,34.8552312579663"
-                    Point3="-74.7636320046702,38.8552312579663" />
-                  <mssgle:LineSegment
-                    End="-74.7636320046702,51.2636365139124" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output18]"
-          TopLeft="1293.45451951749,1924.50909166047">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-72.7030258236512,73.5030305935643"
-              Start="0,0"
-              End="-72.7030258236512,66.0030305935643">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5977975749256" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39.5977975749256"
-                    Point2="0,43.5977975749256"
-                    Point3="-4,43.5977975749256" />
-                  <mssgle:LineSegment
-                    End="-68.7030258236512,43.5977975749256" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-68.7030258236512,43.5977975749256"
-                    Point2="-72.7030258236512,43.5977975749256"
-                    Point3="-72.7030258236512,47.5977975749256" />
-                  <mssgle:LineSegment
-                    End="-72.7030258236512,66.0030305935643" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output9]"
-          TopLeft="1204.727254882,2130.18181897828">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="99.866663222843,58.7636365139128"
-              Start="0,0"
-              End="99.866663222843,51.2636365139128">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.3818182569564" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.3818182569564"
-                    Point2="0,29.3818182569564"
-                    Point3="4,29.3818182569564" />
-                  <mssgle:LineSegment
-                    End="95.866663222843,29.3818182569564" />
-                  <mssgle:CubicBezierSegment
-                    Point1="95.866663222843,29.3818182569564"
-                    Point2="99.866663222843,29.3818182569564"
-                    Point3="99.866663222843,33.3818182569564" />
-                  <mssgle:LineSegment
-                    End="99.866663222843,51.2636365139128" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output10]"
-          TopLeft="524.933314683703,790.880001008352">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="76.9333300484554,82.666666859521"
-              Start="0,0"
-              End="76.9333300484554,75.166666859521">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.033142971533" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.033142971533"
-                    Point2="0,49.033142971533"
-                    Point3="4,49.033142971533" />
-                  <mssgle:LineSegment
-                    End="72.9333300484554,49.033142971533" />
-                  <mssgle:CubicBezierSegment
-                    Point1="72.9333300484554,49.033142971533"
-                    Point2="76.9333300484554,49.033142971533"
-                    Point3="76.9333300484554,53.033142971533" />
-                  <mssgle:LineSegment
-                    End="76.9333300484554,75.166666859521" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output11]"
-          TopLeft="740.247594335345,788.571431310745">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-94.9142829365202,84.9752365571276"
-              Start="0,0"
-              End="-94.9142829365202,77.4752365571276">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.4024545978848" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,46.4024545978848"
-                    Point2="0,50.4024545978848"
-                    Point3="-4,50.4024545978848" />
-                  <mssgle:LineSegment
-                    End="-90.9142829365202,50.4024545978848" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-90.9142829365202,50.4024545978848"
-                    Point2="-94.9142829365202,50.4024545978848"
-                    Point3="-94.9142829365202,54.4024545978848" />
-                  <mssgle:LineSegment
-                    End="-94.9142829365202,77.4752365571276" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output12]"
-          TopLeft="1091.2,1420.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-85.0666666666668,79.2"
-              Start="0,0"
-              End="-85.0666666666668,71.7">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.9769142857143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,42.9769142857143"
-                    Point2="0,46.9769142857143"
-                    Point3="-4,46.9769142857143" />
-                  <mssgle:LineSegment
-                    End="-81.0666666666668,46.9769142857143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-81.0666666666668,46.9769142857143"
-                    Point2="-85.0666666666668,46.9769142857143"
-                    Point3="-85.0666666666668,50.9769142857143" />
-                  <mssgle:LineSegment
-                    End="-85.0666666666668,71.7" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output13]"
           TopLeft="968.8,1240.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27031,65 +26046,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output14]"
-          TopLeft="525.009505061499,379.946669355604">
+          Id="Package\Load Fact.Paths[Sort Output7]"
+          TopLeft="1091.2,1420.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-101.676184841187,72.906665586684"
+              EndConnector="-85.0666666666668,79.2"
               Start="0,0"
-              End="-101.676184841187,65.406665586684">
+              End="-85.0666666666668,71.7">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.2440679308446" />
+                    End="0,42.9769142857143" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,39.2440679308446"
-                    Point2="0,43.2440679308446"
-                    Point3="-4,43.2440679308446" />
+                    Point1="0,42.9769142857143"
+                    Point2="0,46.9769142857143"
+                    Point3="-4,46.9769142857143" />
                   <mssgle:LineSegment
-                    End="-97.6761848411867,43.2440679308446" />
+                    End="-81.0666666666668,46.9769142857143" />
                   <mssgle:CubicBezierSegment
-                    Point1="-97.6761848411867,43.2440679308446"
-                    Point2="-101.676184841187,43.2440679308446"
-                    Point3="-101.676184841187,47.2440679308446" />
+                    Point1="-81.0666666666668,46.9769142857143"
+                    Point2="-85.0666666666668,46.9769142857143"
+                    Point3="-85.0666666666668,50.9769142857143" />
                   <mssgle:LineSegment
-                    End="-101.676184841187,65.406665586684" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output15]"
-          TopLeft="625.599977350236,1017.01333414883">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="105.999998516506,79.3600004463196"
-              Start="0,0"
-              End="105.999998516506,71.8600004463196">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.0718174075885" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,43.0718174075885"
-                    Point2="0,47.0718174075885"
-                    Point3="4,47.0718174075885" />
-                  <mssgle:LineSegment
-                    End="101.999998516506,47.0718174075885" />
-                  <mssgle:CubicBezierSegment
-                    Point1="101.999998516506,47.0718174075885"
-                    Point2="105.999998516506,47.0718174075885"
-                    Point3="105.999998516506,51.0718174075885" />
-                  <mssgle:LineSegment
-                    End="105.999998516506,71.8600004463196" />
+                    End="-85.0666666666668,71.7" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27100,30 +26081,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[Sort Output16]"
-          TopLeft="625.961884590937,586.81905038985">
+          TopLeft="740.247594335345,788.571431310745">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-81.8285694039062,68.4876169325205"
+              EndConnector="-94.9142829365202,84.9752365571276"
               Start="0,0"
-              End="-81.8285694039062,60.9876169325205">
+              End="-94.9142829365202,77.4752365571276">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.591441255128" />
+                    End="0,46.4024545978848" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,36.591441255128"
-                    Point2="0,40.591441255128"
-                    Point3="-4,40.591441255128" />
+                    Point1="0,46.4024545978848"
+                    Point2="0,50.4024545978848"
+                    Point3="-4,50.4024545978848" />
                   <mssgle:LineSegment
-                    End="-77.8285694039062,40.591441255128" />
+                    End="-90.9142829365202,50.4024545978848" />
                   <mssgle:CubicBezierSegment
-                    Point1="-77.8285694039062,40.591441255128"
-                    Point2="-81.8285694039062,40.591441255128"
-                    Point3="-81.8285694039062,44.591441255128" />
+                    Point1="-90.9142829365202,50.4024545978848"
+                    Point2="-94.9142829365202,50.4024545978848"
+                    Point3="-94.9142829365202,54.4024545978848" />
                   <mssgle:LineSegment
-                    End="-81.8285694039062,60.9876169325205" />
+                    End="-94.9142829365202,77.4752365571276" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27133,19 +26114,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output]"
-          TopLeft="121.495236382788,103.436191249181">
+          Id="Package\Load Fact.Paths[Sort Output8]"
+          TopLeft="524.933314683703,790.880001008352">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.2647625951007"
+              EndConnector="76.9333300484554,82.666666859521"
               Start="0,0"
-              End="0,37.7647625951007">
+              End="76.9333300484554,75.166666859521">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.7647625951007" />
+                    End="0,45.033142971533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.033142971533"
+                    Point2="0,49.033142971533"
+                    Point3="4,49.033142971533" />
+                  <mssgle:LineSegment
+                    End="72.9333300484554,49.033142971533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.9333300484554,49.033142971533"
+                    Point2="76.9333300484554,49.033142971533"
+                    Point3="76.9333300484554,53.033142971533" />
+                  <mssgle:LineSegment
+                    End="76.9333300484554,75.166666859521" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27155,19 +26148,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output5]"
-          TopLeft="737.666642843732,696.609526517353">
+          Id="Package\Load Fact.Paths[Sort Output17]"
+          TopLeft="1204.727254882,2130.18181897828">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.3619047933919"
+              EndConnector="99.866663222843,58.7636365139128"
               Start="0,0"
-              End="0,42.8619047933919">
+              End="99.866663222843,51.2636365139128">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.8619047933919" />
+                    End="0,25.3818182569564" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.3818182569564"
+                    Point2="0,29.3818182569564"
+                    Point3="4,29.3818182569564" />
+                  <mssgle:LineSegment
+                    End="95.866663222843,29.3818182569564" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95.866663222843,29.3818182569564"
+                    Point2="99.866663222843,29.3818182569564"
+                    Point3="99.866663222843,33.3818182569564" />
+                  <mssgle:LineSegment
+                    End="99.866663222843,51.2636365139128" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27177,19 +26182,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output1]"
-          TopLeft="969,1138.4">
+          Id="Package\Load Fact.Paths[Sort Output9]"
+          TopLeft="1401.09088344285,2130.18181897828">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.8000000000002"
+              EndConnector="-74.7636320046702,58.7636365139124"
               Start="0,0"
-              End="0,53.3000000000002">
+              End="-74.7636320046702,51.2636365139124">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.3000000000002" />
+                    End="0,30.8552312579663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.8552312579663"
+                    Point2="0,34.8552312579663"
+                    Point3="-4,34.8552312579663" />
+                  <mssgle:LineSegment
+                    End="-70.7636320046702,34.8552312579663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-70.7636320046702,34.8552312579663"
+                    Point2="-74.7636320046702,34.8552312579663"
+                    Point3="-74.7636320046702,38.8552312579663" />
+                  <mssgle:LineSegment
+                    End="-74.7636320046702,51.2636365139124" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27199,19 +26216,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output2]"
-          TopLeft="1403.50300298123,2036.12121289263">
+          Id="Package\Load Fact.Paths[Sort Output10]"
+          TopLeft="248.266659010782,387.893334495968">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.4606060856524"
+              EndConnector="131.599994542864,64.9600004463196"
               Start="0,0"
-              End="0,44.9606060856524">
+              End="131.599994542864,57.4600004463196">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.9606060856524" />
+                    End="0,34.5305602647313" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5305602647313"
+                    Point2="0,38.5305602647313"
+                    Point3="4,38.5305602647313" />
+                  <mssgle:LineSegment
+                    End="127.599994542864,38.5305602647313" />
+                  <mssgle:CubicBezierSegment
+                    Point1="127.599994542864,38.5305602647313"
+                    Point2="131.599994542864,38.5305602647313"
+                    Point3="131.599994542864,42.5305602647313" />
+                  <mssgle:LineSegment
+                    End="131.599994542864,57.4600004463196" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27221,19 +26250,167 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output3]"
-          TopLeft="854.304730834659,909.63809733194">
+          Id="Package\Load Fact.Paths[Sort Output11]"
+          TopLeft="872,1423.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.428572231475"
+              EndConnector="90.6666666666669,76.8000000000002"
               Start="0,0"
-              End="0,51.928572231475">
+              End="90.6666666666669,69.3000000000002">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.928572231475" />
+                    End="0,41.5533714285715" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5533714285715"
+                    Point2="0,45.5533714285715"
+                    Point3="4,45.5533714285715" />
+                  <mssgle:LineSegment
+                    End="86.6666666666669,45.5533714285715" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86.6666666666669,45.5533714285715"
+                    Point2="90.6666666666669,45.5533714285715"
+                    Point3="90.6666666666669,49.5533714285715" />
+                  <mssgle:LineSegment
+                    End="90.6666666666669,69.3000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output12]"
+          TopLeft="1201.6,1726.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-78.0606060846887,64.0000000000002"
+              Start="0,0"
+              End="-78.0606060846887,56.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.961142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.961142857143"
+                    Point2="0,37.961142857143"
+                    Point3="-4,37.961142857143" />
+                  <mssgle:LineSegment
+                    End="-74.0606060846887,37.961142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-74.0606060846887,37.961142857143"
+                    Point2="-78.0606060846887,37.961142857143"
+                    Point3="-78.0606060846887,41.961142857143" />
+                  <mssgle:LineSegment
+                    End="-78.0606060846887,56.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output13]"
+          TopLeft="990.4,1730.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="89.6727272486445,60.0000000000002"
+              Start="0,0"
+              End="89.6727272486445,52.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5885714285716" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5885714285716"
+                    Point2="0,35.5885714285716"
+                    Point3="4,35.5885714285716" />
+                  <mssgle:LineSegment
+                    End="85.6727272486445,35.5885714285716" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85.6727272486445,35.5885714285716"
+                    Point2="89.6727272486445,35.5885714285716"
+                    Point3="89.6727272486445,39.5885714285716" />
+                  <mssgle:LineSegment
+                    End="89.6727272486445,52.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output14]"
+          TopLeft="1103.63634521311,1924.46060677692">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95.3818151473995,73.5515154771133"
+              Start="0,0"
+              End="95.3818151473995,66.0515154771133">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.7757577385566" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.7757577385566"
+                    Point2="0,36.7757577385566"
+                    Point3="4,36.7757577385566" />
+                  <mssgle:LineSegment
+                    End="91.3818151473995,36.7757577385566" />
+                  <mssgle:CubicBezierSegment
+                    Point1="91.3818151473995,36.7757577385566"
+                    Point2="95.3818151473995,36.7757577385566"
+                    Point3="95.3818151473995,40.7757577385566" />
+                  <mssgle:LineSegment
+                    End="95.3818151473995,66.0515154771133" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output15]"
+          TopLeft="758.4,1240.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="87.4666666666667,48.8000000000002"
+              Start="0,0"
+              End="87.4666666666667,41.3000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.9453714285715" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.9453714285715"
+                    Point2="0,28.9453714285715"
+                    Point3="4,28.9453714285715" />
+                  <mssgle:LineSegment
+                    End="83.4666666666667,28.9453714285715" />
+                  <mssgle:CubicBezierSegment
+                    Point1="83.4666666666667,28.9453714285715"
+                    Point2="87.4666666666667,28.9453714285715"
+                    Point3="87.4666666666667,32.9453714285715" />
+                  <mssgle:LineSegment
+                    End="87.4666666666667,41.3000000000002" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27244,18 +26421,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output4]"
-          TopLeft="625.342837672008,491.352383636596">
+          TopLeft="1292.99997272636,1829.67272894079">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.866666753254"
+              EndConnector="0,53.2363627196801"
               Start="0,0"
-              End="0,46.366666753254">
+              End="0,45.7363627196801">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.366666753254" />
+                    End="0,45.7363627196801" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27265,95 +26442,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output10]"
-          TopLeft="1292.79997272636,1829.67272894079">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.2363627196805"
-              Start="0,0"
-              End="0,45.7363627196805">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.7363627196805" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output6]"
-          TopLeft="374.09522656789,102.148572191329">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.0666673554317"
-              Start="0,0"
-              End="0,37.5666673554317">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5666673554317" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output7]"
-          TopLeft="524.190463467251,283.580953884427">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.765715471177"
-              Start="0,0"
-              End="0,47.265715471177">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.265715471177" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output8]"
-          TopLeft="1198.4,1632">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.8000000000002"
-              Start="0,0"
-              End="0,45.3000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.3000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output9]"
+          Id="Package\Load Fact.Paths[OLE DB Source Output]"
           TopLeft="1089.4,1328.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27375,7 +26464,161 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output9]"
+          Id="Package\Load Fact.Paths[OLE DB Source Output1]"
+          TopLeft="1198.4,1632">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.8000000000002"
+              Start="0,0"
+              End="0,45.3000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.3000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output2]"
+          TopLeft="524.190463467251,283.580953884427">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.765715471177"
+              Start="0,0"
+              End="0,47.265715471177">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.265715471177" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output3]"
+          TopLeft="737.666642843732,696.609526517353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.3619047933919"
+              Start="0,0"
+              End="0,42.8619047933919">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.8619047933919" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output6]"
+          TopLeft="625.342837672008,491.352383636596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.866666753254"
+              Start="0,0"
+              End="0,46.366666753254">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.366666753254" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output5]"
+          TopLeft="854.304730834659,909.63809733194">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.428572231475"
+              Start="0,0"
+              End="0,51.928572231475">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.928572231475" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output8]"
+          TopLeft="1403.50300298123,2036.12121289263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.4606060856524"
+              Start="0,0"
+              End="0,44.9606060856524">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.9606060856524" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output9]"
+          TopLeft="969,1138.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.8000000000002"
+              Start="0,0"
+              End="0,53.3000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.3000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Merge Join Output8]"
           TopLeft="869.8,1331.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27397,7 +26640,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output8]"
+          Id="Package\Load Fact.Paths[Merge Join Output7]"
           TopLeft="524.399981602034,696.906667322371">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27419,7 +26662,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output7]"
+          Id="Package\Load Fact.Paths[Merge Join Output6]"
           TopLeft="624.599977707864,915.146667867873">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27441,7 +26684,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output6]"
+          Id="Package\Load Fact.Paths[Merge Join Output5]"
           TopLeft="983.6,1541.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27463,7 +26706,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output5]"
+          Id="Package\Load Fact.Paths[Merge Join Output4]"
           TopLeft="755.866654600038,1137.97333459515">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27485,7 +26728,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output4]"
+          Id="Package\Load Fact.Paths[Merge Join Output3]"
           TopLeft="1307.67443057989,2230.54545549219">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27507,7 +26750,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output3]"
+          Id="Package\Load Fact.Paths[Merge Join Output2]"
           TopLeft="403.266653169527,494.453334942288">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27520,28 +26763,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,46.7933325123257" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Merge Join Output2]"
-          TopLeft="245.933326088058,293.226667801751">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.0666666942174"
-              Start="0,0"
-              End="0,45.5666666942174">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.5666666942174" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27617,7 +26838,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output19]"
+          Id="Package\Load Fact.Paths[Sort Output]"
           TopLeft="856.057110954468,1010.66666956341">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27651,7 +26872,41 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output17]"
+          Id="Package\Load Fact.Paths[Sort Output1]"
+          TopLeft="1293.45451951749,1924.50909166047">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-72.7030258236512,73.5030305935643"
+              Start="0,0"
+              End="-72.7030258236512,66.0030305935643">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5977975749256" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.5977975749256"
+                    Point2="0,43.5977975749256"
+                    Point3="-4,43.5977975749256" />
+                  <mssgle:LineSegment
+                    End="-68.7030258236512,43.5977975749256" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-68.7030258236512,43.5977975749256"
+                    Point2="-72.7030258236512,43.5977975749256"
+                    Point3="-72.7030258236512,47.5977975749256" />
+                  <mssgle:LineSegment
+                    End="-72.7030258236512,66.0030305935643" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output2]"
           TopLeft="404.933319452074,590.346667454614">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27685,133 +26940,121 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output]"
-          TopLeft="758.4,1240.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="87.4666666666667,48.8000000000002"
-              Start="0,0"
-              End="87.4666666666667,41.3000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.9453714285715" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.9453714285715"
-                    Point2="0,28.9453714285715"
-                    Point3="4,28.9453714285715" />
-                  <mssgle:LineSegment
-                    End="83.4666666666667,28.9453714285715" />
-                  <mssgle:CubicBezierSegment
-                    Point1="83.4666666666667,28.9453714285715"
-                    Point2="87.4666666666667,28.9453714285715"
-                    Point3="87.4666666666667,32.9453714285715" />
-                  <mssgle:LineSegment
-                    End="87.4666666666667,41.3000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output1]"
-          TopLeft="1103.63634521311,1924.46060677692">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="95.3818151473995,73.5515154771133"
-              Start="0,0"
-              End="95.3818151473995,66.0515154771133">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.7757577385566" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.7757577385566"
-                    Point2="0,36.7757577385566"
-                    Point3="4,36.7757577385566" />
-                  <mssgle:LineSegment
-                    End="91.3818151473995,36.7757577385566" />
-                  <mssgle:CubicBezierSegment
-                    Point1="91.3818151473995,36.7757577385566"
-                    Point2="95.3818151473995,36.7757577385566"
-                    Point3="95.3818151473995,40.7757577385566" />
-                  <mssgle:LineSegment
-                    End="95.3818151473995,66.0515154771133" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output2]"
-          TopLeft="990.4,1730.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="89.6727272486445,60.0000000000002"
-              Start="0,0"
-              End="89.6727272486445,52.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5885714285716" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5885714285716"
-                    Point2="0,35.5885714285716"
-                    Point3="4,35.5885714285716" />
-                  <mssgle:LineSegment
-                    End="85.6727272486445,35.5885714285716" />
-                  <mssgle:CubicBezierSegment
-                    Point1="85.6727272486445,35.5885714285716"
-                    Point2="89.6727272486445,35.5885714285716"
-                    Point3="89.6727272486445,39.5885714285716" />
-                  <mssgle:LineSegment
-                    End="89.6727272486445,52.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Load Fact.Paths[Sort Output3]"
-          TopLeft="1201.6,1726.4">
+          TopLeft="625.961884590937,586.81905038985">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-78.0606060846887,64.0000000000002"
+              EndConnector="-81.8285694039062,68.4876169325205"
               Start="0,0"
-              End="-78.0606060846887,56.5000000000002">
+              End="-81.8285694039062,60.9876169325205">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.961142857143" />
+                    End="0,36.591441255128" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.961142857143"
-                    Point2="0,37.961142857143"
-                    Point3="-4,37.961142857143" />
+                    Point1="0,36.591441255128"
+                    Point2="0,40.591441255128"
+                    Point3="-4,40.591441255128" />
                   <mssgle:LineSegment
-                    End="-74.0606060846887,37.961142857143" />
+                    End="-77.8285694039062,40.591441255128" />
                   <mssgle:CubicBezierSegment
-                    Point1="-74.0606060846887,37.961142857143"
-                    Point2="-78.0606060846887,37.961142857143"
-                    Point3="-78.0606060846887,41.961142857143" />
+                    Point1="-77.8285694039062,40.591441255128"
+                    Point2="-81.8285694039062,40.591441255128"
+                    Point3="-81.8285694039062,44.591441255128" />
                   <mssgle:LineSegment
-                    End="-78.0606060846887,56.5000000000002" />
+                    End="-81.8285694039062,60.9876169325205" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output4]"
+          TopLeft="625.599977350236,1017.01333414883">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="105.999998516506,79.3600004463196"
+              Start="0,0"
+              End="105.999998516506,71.8600004463196">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.0718174075885" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.0718174075885"
+                    Point2="0,47.0718174075885"
+                    Point3="4,47.0718174075885" />
+                  <mssgle:LineSegment
+                    End="101.999998516506,47.0718174075885" />
+                  <mssgle:CubicBezierSegment
+                    Point1="101.999998516506,47.0718174075885"
+                    Point2="105.999998516506,47.0718174075885"
+                    Point3="105.999998516506,51.0718174075885" />
+                  <mssgle:LineSegment
+                    End="105.999998516506,71.8600004463196" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output5]"
+          TopLeft="525.009505061499,379.946669355604">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-101.676184841187,72.906665586684"
+              Start="0,0"
+              End="-101.676184841187,65.406665586684">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.2440679308446" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.2440679308446"
+                    Point2="0,43.2440679308446"
+                    Point3="-4,43.2440679308446" />
+                  <mssgle:LineSegment
+                    End="-97.6761848411867,43.2440679308446" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-97.6761848411867,43.2440679308446"
+                    Point2="-101.676184841187,43.2440679308446"
+                    Point3="-101.676184841187,47.2440679308446" />
+                  <mssgle:LineSegment
+                    End="-101.676184841187,65.406665586684" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output7]"
+          TopLeft="247.942854082072,280.847958443197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65.4453760527713"
+              Start="0,0"
+              End="0,57.9453760527713">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.9453760527713" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27902,7 +27145,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Fact\OLE DB Time_dư_2">
+    design-time-name="Package\Load Fact\OLE DB Time_dw_3">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -27941,19 +27184,6 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Fact\OLE DB SpecialOfferProduct_op">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Load Fact\OLE DB SalesOrderDetail_op">
     <Properties>
       <Property>
@@ -27967,7 +27197,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Fact\OLE DB Time_dw_3">
+    design-time-name="Package\Load Fact\OLE DB Time_dw_2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -28307,7 +27537,7 @@
     design-time-name="Package\Load Promotion">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="193.6,41.6"
           Id="Package\Load Promotion\OLE DB SpecialOffer_op"
@@ -28335,9 +27565,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -28373,7 +27601,7 @@
     design-time-name="Package\Load SaleTerritory">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="182.4,41.6"
           Id="Package\Load SaleTerritory\OLE DB Dim_Territory"
@@ -28385,7 +27613,7 @@
         <NodeLayout
           Size="208.8,41.6"
           Id="Package\Load SaleTerritory\OLE DB Country Region_op"
-          TopLeft="643.2,136.8" />
+          TopLeft="645.6,131.2" />
         <NodeLayout
           Size="196,41.6"
           Id="Package\Load SaleTerritory\OLE DB SaleTerritory_op"
@@ -28429,9 +27657,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28465,9 +27691,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28489,33 +27713,29 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load SaleTerritory.Paths[OLE DB Source Output]"
-          TopLeft="750.8,178.4">
+          TopLeft="752,172.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49.6"
+              EndConnector="0,55.2"
               Start="0,0"
-              End="0,42.1">
+              End="0,47.7">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.1" />
+                    End="0,47.7" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28537,9 +27757,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -28588,7 +27806,7 @@
     design-time-name="Package\Load Time">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="259.2,41.6"
           Id="Package\Load Time\OLE DB Source SalesOrderHeader_op 1 1"
@@ -28636,9 +27854,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28660,9 +27876,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28696,9 +27910,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28720,9 +27932,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28756,9 +27966,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28780,9 +27988,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
