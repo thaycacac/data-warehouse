@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="135"
-  DTS:VersionGUID="{170768FE-9347-42CB-8CC9-4201CD0C519B}">
+  DTS:VersionBuild="139"
+  DTS:VersionGUID="{2A7DE4A6-B74E-42EA-A060-08AA7EA7309C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2923,169 +2923,194 @@
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="Title"
+                      cachedSortKeyPosition="2"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Title]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Title]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Title]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FirstName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="FirstName"
+                      cachedSortKeyPosition="3"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[FirstName]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[FirstName]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MiddleName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="MiddleName"
+                      cachedSortKeyPosition="4"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MiddleName]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[MiddleName]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MiddleName]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="LastName"
+                      cachedSortKeyPosition="5"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[LastName]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[LastName]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Phone]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Phone"
+                      cachedSortKeyPosition="7"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Phone]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Phone]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmailAddress]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="EmailAddress"
+                      cachedSortKeyPosition="8"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmailAddress]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[EmailAddress]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailAddress]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmailPromotion]"
                       cachedDataType="i4"
                       cachedName="EmailPromotion"
+                      cachedSortKeyPosition="9"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmailPromotion]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[EmailPromotion]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailPromotion]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AddressLine1]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="AddressLine1"
+                      cachedSortKeyPosition="10"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressLine1]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[AddressLine1]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine1]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AddressLine2]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="AddressLine2"
+                      cachedSortKeyPosition="11"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressLine2]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[AddressLine2]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine2]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="City"
+                      cachedSortKeyPosition="12"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[City]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[City]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PostalCode]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="PostalCode"
+                      cachedSortKeyPosition="14"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostalCode]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[PostalCode]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[PostalCode]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MaritalStatus]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="MaritalStatus"
+                      cachedSortKeyPosition="17"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaritalStatus]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[MaritalStatus]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MaritalStatus]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[YearlyIncome]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="YearlyIncome"
+                      cachedSortKeyPosition="18"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearlyIncome]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[YearlyIncome]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[YearlyIncome]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Gender"
+                      cachedSortKeyPosition="19"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Gender]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Gender]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalChildren]"
                       cachedDataType="i4"
                       cachedName="TotalChildren"
+                      cachedSortKeyPosition="20"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalChildren]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[TotalChildren]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[TotalChildren]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NumberChildrenAtHome]"
                       cachedDataType="i4"
                       cachedName="NumberChildrenAtHome"
+                      cachedSortKeyPosition="21"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumberChildrenAtHome]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[NumberChildrenAtHome]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberChildrenAtHome]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Education]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Education"
+                      cachedSortKeyPosition="22"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Education]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Education]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Education]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Occupation]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Occupation"
+                      cachedSortKeyPosition="23"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Occupation]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Occupation]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Occupation]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CustomerID]"
                       cachedDataType="i4"
                       cachedName="CustomerID"
+                      cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID_OP]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[CustomerID]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CustomerID]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BirthDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="BirthDate"
+                      cachedSortKeyPosition="16"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOB]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[BirthDate]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[BirthDate]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HomeOwnerFlag]"
                       cachedDataType="bool"
                       cachedName="HomeOwnerFlag"
+                      cachedSortKeyPosition="24"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOwnerFlag]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[HomeOwnerFlag]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[HomeOwnerFlag]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NumberCarsOwned]"
                       cachedDataType="i4"
                       cachedName="NumberCarsOwned"
+                      cachedSortKeyPosition="25"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumberCarsOwned]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[NumberCarsOwned]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberCarsOwned]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StateProvinceName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="StateProvinceName"
+                      cachedSortKeyPosition="13"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StateProvince]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[StateProvinceName]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[StateProvinceName]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CountryRegionName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CountryRegionName"
+                      cachedSortKeyPosition="15"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryRegion]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[CountryRegionName]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CountryRegionName]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Suffix]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Suffix"
+                      cachedSortKeyPosition="6"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suffix]"
-                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Suffix]" />
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Suffix]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5000,6 +5025,830 @@
               </outputs>
             </component>
             <component
+              refId="Package\Load Customer\Sort filter duplicate"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort filter duplicate"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[CustomerID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerID"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[CustomerID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[Title]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="Title"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Title]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="FirstName"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[FirstName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[MiddleName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MiddleName"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[MiddleName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">4</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="LastName"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[LastName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">5</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[Suffix]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Suffix"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Suffix]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">6</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Phone"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Phone]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">7</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="EmailAddress"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[EmailAddress]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">8</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[EmailPromotion]"
+                      cachedDataType="i4"
+                      cachedName="EmailPromotion"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[EmailPromotion]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">9</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[AddressLine1]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="AddressLine1"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[AddressLine1]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">10</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[AddressLine2]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="AddressLine2"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[AddressLine2]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">11</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="City"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[City]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">12</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[StateProvinceName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="StateProvinceName"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[StateProvinceName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">13</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[PostalCode]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="PostalCode"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[PostalCode]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">14</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[CountryRegionName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CountryRegionName"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[CountryRegionName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">15</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[BirthDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="BirthDate"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[BirthDate]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">16</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[MaritalStatus]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaritalStatus"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[MaritalStatus]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">17</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[YearlyIncome]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="YearlyIncome"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[YearlyIncome]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">18</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[Gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Gender"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Gender]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">19</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[TotalChildren]"
+                      cachedDataType="i4"
+                      cachedName="TotalChildren"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[TotalChildren]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">20</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[NumberChildrenAtHome]"
+                      cachedDataType="i4"
+                      cachedName="NumberChildrenAtHome"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[NumberChildrenAtHome]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">21</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[Education]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Education"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Education]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">22</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[Occupation]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Occupation"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Occupation]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">23</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[HomeOwnerFlag]"
+                      cachedDataType="bool"
+                      cachedName="HomeOwnerFlag"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[HomeOwnerFlag]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">24</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input].Columns[NumberCarsOwned]"
+                      cachedDataType="i4"
+                      cachedName="NumberCarsOwned"
+                      lineageId="Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[NumberCarsOwned]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">25</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CustomerID]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CustomerID]"
+                      name="CustomerID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[CustomerID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Title]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Title]"
+                      name="Title"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Title]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[FirstName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[FirstName]"
+                      name="FirstName"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[FirstName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MiddleName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MiddleName]"
+                      name="MiddleName"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[MiddleName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[LastName]"
+                      name="LastName"
+                      sortKeyPosition="5">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[LastName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Suffix]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Suffix]"
+                      name="Suffix"
+                      sortKeyPosition="6">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Suffix]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Phone]"
+                      name="Phone"
+                      sortKeyPosition="7">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Phone]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      sortKeyPosition="8">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[EmailAddress]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailPromotion]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailPromotion]"
+                      name="EmailPromotion"
+                      sortKeyPosition="9">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[EmailPromotion]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine1]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine1]"
+                      name="AddressLine1"
+                      sortKeyPosition="10">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[AddressLine1]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine2]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine2]"
+                      name="AddressLine2"
+                      sortKeyPosition="11">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[AddressLine2]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[City]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[City]"
+                      name="City"
+                      sortKeyPosition="12">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[City]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[StateProvinceName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[StateProvinceName]"
+                      name="StateProvinceName"
+                      sortKeyPosition="13">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[StateProvinceName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[PostalCode]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[PostalCode]"
+                      name="PostalCode"
+                      sortKeyPosition="14">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[PostalCode]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CountryRegionName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CountryRegionName]"
+                      name="CountryRegionName"
+                      sortKeyPosition="15">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[CountryRegionName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[BirthDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[BirthDate]"
+                      name="BirthDate"
+                      sortKeyPosition="16">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[BirthDate]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MaritalStatus]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MaritalStatus]"
+                      name="MaritalStatus"
+                      sortKeyPosition="17">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[MaritalStatus]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[YearlyIncome]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[YearlyIncome]"
+                      name="YearlyIncome"
+                      sortKeyPosition="18">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[YearlyIncome]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Gender]"
+                      name="Gender"
+                      sortKeyPosition="19">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Gender]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[TotalChildren]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[TotalChildren]"
+                      name="TotalChildren"
+                      sortKeyPosition="20">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[TotalChildren]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberChildrenAtHome]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberChildrenAtHome]"
+                      name="NumberChildrenAtHome"
+                      sortKeyPosition="21">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[NumberChildrenAtHome]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Education]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Education]"
+                      name="Education"
+                      sortKeyPosition="22">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Education]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Occupation]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Occupation]"
+                      name="Occupation"
+                      sortKeyPosition="23">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[Occupation]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[HomeOwnerFlag]"
+                      dataType="bool"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[HomeOwnerFlag]"
+                      name="HomeOwnerFlag"
+                      sortKeyPosition="24">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[HomeOwnerFlag]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberCarsOwned]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberCarsOwned]"
+                      name="NumberCarsOwned"
+                      sortKeyPosition="25">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load Customer\Union All.Outputs[Union All Output 1].Columns[NumberCarsOwned]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Load Customer\Union All"
               componentClassID="Microsoft.UnionAll"
               contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -5826,8 +6675,13 @@
               name="Sort Output"
               startId="Package\Load Customer\Sort by CustomerId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Customer.Paths[Union All Output 1]"
+              refId="Package\Load Customer.Paths[Sort Output2]"
               endId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Sort Output"
+              startId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Customer.Paths[Union All Output 1]"
+              endId="Package\Load Customer\Sort filter duplicate.Inputs[Sort Input]"
               name="Union All Output 1"
               startId="Package\Load Customer\Union All.Outputs[Union All Output 1]" />
           </paths>
@@ -18467,9 +19321,9 @@
               startId="Package\Load Fact\Merge Join 5.Outputs[Merge Join Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output9]"
-              endId="Package\Load Fact\Sort by DueDate 2.Inputs[Sort Input]"
+              endId="Package\Load Fact\Sort by CurrencyId 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output]" />
+              startId="Package\Load Fact\OLE DB Currency_dw.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output7]"
               endId="Package\Load Fact\Sort by OrderDate 2.Inputs[Sort Input]"
@@ -18487,9 +19341,9 @@
               startId="Package\Load Fact\OLE DB Promotion_dw.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output8]"
-              endId="Package\Load Fact\Sort by CurrencyId 2.Inputs[Sort Input]"
+              endId="Package\Load Fact\Sort by DueDate 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Currency_dw.Outputs[OLE DB Source Output]" />
+              startId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output3]"
               endId="Package\Load Fact\Sort by CustomerId 2.Inputs[Sort Input]"
@@ -18507,99 +19361,99 @@
               startId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output]"
-              endId="Package\Load Fact\Sort by TerritoryId 2.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Territory_dw.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output4]"
               endId="Package\Load Fact\Sort by ShipDate 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Load Fact\OLE DB Time_dw_3.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output4]"
+              endId="Package\Load Fact\Sort by TerritoryId 2.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Territory_dw.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Load Fact.Paths[Sort Output15]"
+              endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort by SpecialOfferId.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output14]"
               endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by SpecialOfferId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output14]"
+              refId="Package\Load Fact.Paths[Sort Output13]"
               endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CustomerId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output13]"
+              refId="Package\Load Fact.Paths[Sort Output12]"
               endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by DueDate 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output12]"
+              refId="Package\Load Fact.Paths[Sort Output11]"
               endId="Package\Load Fact\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by ProductId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output11]"
+              refId="Package\Load Fact.Paths[Sort Output10]"
               endId="Package\Load Fact\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by ProductId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output10]"
+              refId="Package\Load Fact.Paths[Sort Output9]"
               endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CustomerId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output9]"
+              refId="Package\Load Fact.Paths[Sort Output8]"
               endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by SalesOrderId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output8]"
-              endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort by TerritoryId 2.Outputs[Sort Output]" />
-            <path
               refId="Package\Load Fact.Paths[Sort Output6]"
-              endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort by ShipDate 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output5]"
               endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by SalesOrderId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output4]"
+              refId="Package\Load Fact.Paths[Sort Output5]"
               endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CurrencyId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output3]"
+              refId="Package\Load Fact.Paths[Sort Output4]"
               endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by OrderDate 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output2]"
+              refId="Package\Load Fact.Paths[Sort Output3]"
               endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by OrderDate.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output1]"
+              refId="Package\Load Fact.Paths[Sort Output2]"
               endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by DueDate.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output]"
+              refId="Package\Load Fact.Paths[Sort Output1]"
               endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by TerritoryId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output16]"
+              refId="Package\Load Fact.Paths[Sort Output]"
               endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CurrencyId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output7]"
-              endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Left Input]"
+              refId="Package\Load Fact.Paths[Sort Output16]"
+              endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Load Fact\Sort by SpecialOfferId.Outputs[Sort Output]" />
+              startId="Package\Load Fact\Sort by TerritoryId 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output7]"
+              endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort by ShipDate 2.Outputs[Sort Output]" />
             <path
               refId="Package\Load Fact.Paths[Sort Output17]"
               endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Left Input]"
@@ -18635,7 +19489,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -19203,7 +20057,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -25538,7 +26392,7 @@
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load Customer\OLE DB Destination"
-          TopLeft="590.408173319897,850.873957249533" />
+          TopLeft="593.836744806857,932.47395622854" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Load Customer\Data Conversion"
@@ -25773,20 +26627,46 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Load Customer\Sort filter duplicate"
+          TopLeft="596.000005994525,832.611767194015" />
         <EdgeLayout
           Id="Package\Load Customer.Paths[Union All Output 1]"
-          TopLeft="674.946949033418,775.33109703328">
+          TopLeft="677.142865370731,775.33109703328">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,75.5428602162535"
+              EndConnector="0,57.2806701607354"
               Start="0,0"
-              End="0,68.0428602162535">
+              End="0,49.7806701607354">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,68.0428602162535" />
+                    End="0,49.7806701607354" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Customer.Paths[Sort Output2]"
+          TopLeft="679.518375400691,874.211767194015">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.262189034525"
+              Start="0,0"
+              End="0,50.762189034525">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.762189034525" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25860,9 +26740,13 @@
           Id="Package\Load Fact\OLE DB Time_dw_3"
           TopLeft="1319.5151225196,1994.52121289263" />
         <NodeLayout
-          Size="173.6,41.6"
-          Id="Package\Load Fact\Sort by OrderDate 2"
-          TopLeft="1134.1714283768,1684.8" />
+          Size="157.6,41.6"
+          Id="Package\Load Fact\Sort by ShipDate"
+          TopLeft="1123.42113200206,2089.45576857037" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Load Fact\Sort by OrderDate"
+          TopLeft="903.37959130846,1685.30420163165" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load Fact\Merge Join 5"
@@ -25872,41 +26756,49 @@
           Id="Package\Load Fact\Merge Join 8"
           TopLeft="1235.39391810485,2188.94545549219" />
         <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\Load Fact\Sort by CurrencyId"
-          TopLeft="790.69387712006,1382.47394959209" />
+          Size="176,41.6"
+          Id="Package\Load Fact\Sort by SalesOrderId"
+          TopLeft="152.617678696043,341.923586535524" />
         <NodeLayout
           Size="216,41.6"
           Id="Package\Load Fact\OLE DB SalesOrderDetail_op"
           TopLeft="139.619049153362,239.247958443197" />
         <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\Load Fact\Sort by ShipDate 2"
-          TopLeft="1322.23374019645,2087.70786938619" />
-        <NodeLayout
-          Size="157.6,41.6"
-          Id="Package\Load Fact\Sort by ShipDate"
-          TopLeft="1123.42113200206,2089.45576857037" />
+          Size="165.6,41.6"
+          Id="Package\Load Fact\Sort by TerritoryId"
+          TopLeft="671.37959130846,1199.2" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load Fact\Merge Join 3"
           TopLeft="684.133309200076,1096.37333459515" />
         <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Load Fact\Sort by ProductId"
+          TopLeft="317.447604582478,548.746667454614" />
+        <NodeLayout
           Size="172,41.6"
           Id="Package\Load Fact\OLE DB Time_dw_2"
           TopLeft="1221.23930373649,1788.07272894079" />
         <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Load Fact\Sort by ShipDate 2"
+          TopLeft="1322.23374019645,2087.70786938619" />
+        <NodeLayout
           Size="174.4,41.6"
           Id="Package\Load Fact\OLE DB Product_dw"
-          TopLeft="566.911546355589,449.752383636596" />
+          TopLeft="570.340117842549,448.528854207672" />
         <NodeLayout
           Size="183.2,41.6"
           Id="Package\Load Fact\OLE DB Customer_dw"
           TopLeft="785.442147050277,868.03809733194" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\Load Fact\Sort by DueDate"
-          TopLeft="1023.14654887768,1883.73455636901" />
+          Size="165.6,41.6"
+          Id="Package\Load Fact\Sort by DueDate 2"
+          TopLeft="1221.94431517172,1882.03514206838" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load Fact\Sort by ProductId 2"
+          TopLeft="571.129231501909,546.966949574027" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load Fact\Merge Join 9"
@@ -25916,37 +26808,37 @@
           Id="Package\Load Fact\Merge Join 6"
           TopLeft="915.2,1500" />
         <NodeLayout
-          Size="164,41.6"
-          Id="Package\Load Fact\Sort by OrderDate"
-          TopLeft="903.37959130846,1685.30420163165" />
+          Size="156,41.6"
+          Id="Package\Load Fact\Sort by DueDate"
+          TopLeft="1023.14654887768,1883.73455636901" />
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\Load Fact\Merge Join"
           TopLeft="459.066648520364,655.306667322371" />
         <NodeLayout
-          Size="185.6,41.6"
-          Id="Package\Load Fact\Sort by SalesOrderId 2"
-          TopLeft="489.768689040811,340.094568539782" />
+          Size="181.6,41.6"
+          Id="Package\Load Fact\Sort by SpecialOfferId"
+          TopLeft="430.916987457993,748.406051416263" />
         <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Load Fact\Sort by DueDate 2"
-          TopLeft="1221.94431517172,1882.03514206838" />
+          Size="173.6,41.6"
+          Id="Package\Load Fact\Sort by OrderDate 2"
+          TopLeft="1134.1714283768,1684.8" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load Fact\Sort by CustomerId"
+          TopLeft="546.277527925781,975.413334148831" />
         <NodeLayout
           Size="185.6,41.6"
           Id="Package\Load Fact\OLE DB Promotion_dw"
           TopLeft="630.85711972892,661.127173661974" />
         <NodeLayout
-          Size="176,41.6"
-          Id="Package\Load Fact\Sort by CurrencyId 2"
-          TopLeft="1020.50612219874,1381.82184877627" />
-        <NodeLayout
           Size="180,41.6"
           Id="Package\Load Fact\OLE DB Currency_dw"
           TopLeft="1022.90612287994,1287.2" />
         <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Load Fact\Sort by TerritoryId"
-          TopLeft="671.37959130846,1199.2" />
+          Size="167.2,41.6"
+          Id="Package\Load Fact\Sort by CurrencyId"
+          TopLeft="790.69387712006,1382.47394959209" />
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\Load Fact\OLE DB Time_dw"
@@ -25956,9 +26848,9 @@
           Id="Package\Load Fact\Merge Join 4"
           TopLeft="332.399986886979,452.853334942288" />
         <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\Load Fact\Sort by SpecialOfferId 2"
-          TopLeft="633.986368941922,748.719330494923" />
+          Size="179.2,41.6"
+          Id="Package\Load Fact\Sort by CustomerId 2"
+          TopLeft="791.428539331269,975.184316708036" />
         <NodeLayout
           Size="223.2,41.6"
           Id="Package\Load Fact\OLE DB SalesOrderHeader_op"
@@ -25968,33 +26860,25 @@
           Id="Package\Load Fact\Sort by TerritoryId 2"
           TopLeft="897.28979565423,1199.2" />
         <NodeLayout
-          Size="181.6,41.6"
-          Id="Package\Load Fact\Sort by SpecialOfferId"
-          TopLeft="430.916987457993,748.406051416263" />
+          Size="176,41.6"
+          Id="Package\Load Fact\Sort by CurrencyId 2"
+          TopLeft="1020.50612219874,1381.82184877627" />
         <NodeLayout
-          Size="160.8,41.6"
-          Id="Package\Load Fact\Sort by ProductId"
-          TopLeft="317.447604582478,548.746667454614" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load Fact\Sort by CustomerId"
-          TopLeft="546.277527925781,975.413334148831" />
+          Size="185.6,41.6"
+          Id="Package\Load Fact\Sort by SalesOrderId 2"
+          TopLeft="489.768689040811,340.094568539782" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load Fact\Merge Join 7"
           TopLeft="1129.81816036051,1998.01212225403" />
         <NodeLayout
+          Size="191.2,41.6"
+          Id="Package\Load Fact\Sort by SpecialOfferId 2"
+          TopLeft="633.986368941922,748.719330494923" />
+        <NodeLayout
           Size="171.2,41.6"
           Id="Package\Load Fact\OLE DB Destination"
           TopLeft="1225.15494305493,2296.6898759228" />
-        <NodeLayout
-          Size="176,41.6"
-          Id="Package\Load Fact\Sort by SalesOrderId"
-          TopLeft="152.617678696043,341.923586535524" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Load Fact\Sort by ProductId 2"
-          TopLeft="571.129231501909,546.966949574027" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load Fact\Merge Join 2"
@@ -26003,10 +26887,6 @@
           Size="152.8,41.6"
           Id="Package\Load Fact\Derived Column"
           TopLeft="906.4,1591.2" />
-        <NodeLayout
-          Size="179.2,41.6"
-          Id="Package\Load Fact\Sort by CustomerId 2"
-          TopLeft="791.428539331269,975.184316708036" />
         <NodeLayout
           Size="176.8,41.6"
           Id="Package\Load Fact\OLE DB Territory_dw"
@@ -26047,278 +26927,6 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[Sort Output15]"
-          TopLeft="729.586368941922,790.319330494923">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-84.2530575430967,83.2273373729504"
-              Start="0,0"
-              End="-84.2530575430967,75.7273373729504">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.3657006817843" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.3657006817843"
-                    Point2="0,49.3657006817843"
-                    Point3="-4,49.3657006817843" />
-                  <mssgle:LineSegment
-                    End="-80.2530575430967,49.3657006817843" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-80.2530575430967,49.3657006817843"
-                    Point2="-84.2530575430967,49.3657006817843"
-                    Point3="-84.2530575430967,53.3657006817843" />
-                  <mssgle:LineSegment
-                    End="-84.2530575430967,75.7273373729504" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output]"
-          TopLeft="754.17959130846,1240.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="91.6870753582064,48.8"
-              Start="0,0"
-              End="91.6870753582064,41.3">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.9453714285714" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.9453714285714"
-                    Point2="0,28.9453714285714"
-                    Point3="4,28.9453714285714" />
-                  <mssgle:LineSegment
-                    End="87.6870753582064,28.9453714285714" />
-                  <mssgle:CubicBezierSegment
-                    Point1="87.6870753582064,28.9453714285714"
-                    Point2="91.6870753582064,28.9453714285714"
-                    Point3="91.6870753582064,32.9453714285714" />
-                  <mssgle:LineSegment
-                    End="91.6870753582064,41.3" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output1]"
-          TopLeft="1101.14654887768,1925.33455636901">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="76.1382781494929,72.6775658850213"
-              Start="0,0"
-              End="76.1382781494929,65.1775658850213">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.1081790792298" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39.1081790792298"
-                    Point2="0,43.1081790792298"
-                    Point3="4,43.1081790792298" />
-                  <mssgle:LineSegment
-                    End="72.1382781494929,43.1081790792298" />
-                  <mssgle:CubicBezierSegment
-                    Point1="72.1382781494929,43.1081790792298"
-                    Point2="76.1382781494929,43.1081790792298"
-                    Point3="76.1382781494929,47.1081790792298" />
-                  <mssgle:LineSegment
-                    End="76.1382781494929,65.1775658850213" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output2]"
-          TopLeft="985.37959130846,1726.90420163165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="94.6931359401864,63.4957983683551"
-              Start="0,0"
-              End="94.6931359401864,55.9957983683551">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.6620792607729" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.6620792607729"
-                    Point2="0,37.6620792607729"
-                    Point3="4,37.6620792607729" />
-                  <mssgle:LineSegment
-                    End="90.6931359401864,37.6620792607729" />
-                  <mssgle:CubicBezierSegment
-                    Point1="90.6931359401864,37.6620792607729"
-                    Point2="94.6931359401864,37.6620792607729"
-                    Point3="94.6931359401864,41.6620792607729" />
-                  <mssgle:LineSegment
-                    End="94.6931359401864,55.9957983683551" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output3]"
-          TopLeft="1220.9714283768,1726.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-97.432034461488,64.0000000000002"
-              Start="0,0"
-              End="-97.432034461488,56.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.961142857143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.961142857143"
-                    Point2="0,37.961142857143"
-                    Point3="-4,37.961142857143" />
-                  <mssgle:LineSegment
-                    End="-93.432034461488,37.961142857143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-93.432034461488,37.961142857143"
-                    Point2="-97.432034461488,37.961142857143"
-                    Point3="-97.432034461488,41.961142857143" />
-                  <mssgle:LineSegment
-                    End="-97.432034461488,56.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output4]"
-          TopLeft="874.29387712006,1424.07394959209">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88.3727895466069,75.9260504079114"
-              Start="0,0"
-              End="88.3727895466069,68.4260504079114">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.0349944705211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.0349944705211"
-                    Point2="0,45.0349944705211"
-                    Point3="4,45.0349944705211" />
-                  <mssgle:LineSegment
-                    End="84.3727895466069,45.0349944705211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="84.3727895466069,45.0349944705211"
-                    Point2="88.3727895466069,45.0349944705211"
-                    Point3="88.3727895466069,49.0349944705211" />
-                  <mssgle:LineSegment
-                    End="88.3727895466069,68.4260504079114" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output5]"
-          TopLeft="240.617678696043,383.523586535524">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="139.248974857602,69.3297484067637"
-              Start="0,0"
-              End="139.248974857602,61.8297484067637">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.1224450549833" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.1224450549833"
-                    Point2="0,41.1224450549833"
-                    Point3="4,41.1224450549833" />
-                  <mssgle:LineSegment
-                    End="135.248974857602,41.1224450549833" />
-                  <mssgle:CubicBezierSegment
-                    Point1="135.248974857602,41.1224450549833"
-                    Point2="139.248974857602,41.1224450549833"
-                    Point3="139.248974857602,45.1224450549833" />
-                  <mssgle:LineSegment
-                    End="139.248974857602,61.8297484067637" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output6]"
-          TopLeft="1405.83374019645,2129.30786938619">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-79.5064887582691,59.6375861059987"
-              Start="0,0"
-              End="-79.5064887582691,52.1375861059987">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.3736082160152" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.3736082160152"
-                    Point2="0,35.3736082160152"
-                    Point3="-4,35.3736082160152" />
-                  <mssgle:LineSegment
-                    End="-75.5064887582691,35.3736082160152" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-75.5064887582691,35.3736082160152"
-                    Point2="-79.5064887582691,35.3736082160152"
-                    Point3="-79.5064887582691,39.3736082160152" />
-                  <mssgle:LineSegment
-                    End="-79.5064887582691,52.1375861059987" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output7]"
           TopLeft="521.716987457993,790.006051416263">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26352,7 +26960,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output16]"
+          Id="Package\Load Fact.Paths[Sort Output]"
           TopLeft="1108.50612219874,1423.42184877627">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26386,7 +26994,245 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output8]"
+          Id="Package\Load Fact.Paths[Sort Output1]"
+          TopLeft="754.17959130846,1240.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="91.6870753582064,48.8"
+              Start="0,0"
+              End="91.6870753582064,41.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.9453714285714" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.9453714285714"
+                    Point2="0,28.9453714285714"
+                    Point3="4,28.9453714285714" />
+                  <mssgle:LineSegment
+                    End="87.6870753582064,28.9453714285714" />
+                  <mssgle:CubicBezierSegment
+                    Point1="87.6870753582064,28.9453714285714"
+                    Point2="91.6870753582064,28.9453714285714"
+                    Point3="91.6870753582064,32.9453714285714" />
+                  <mssgle:LineSegment
+                    End="91.6870753582064,41.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output2]"
+          TopLeft="1101.14654887768,1925.33455636901">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.1382781494929,72.6775658850213"
+              Start="0,0"
+              End="76.1382781494929,65.1775658850213">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.1081790792298" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.1081790792298"
+                    Point2="0,43.1081790792298"
+                    Point3="4,43.1081790792298" />
+                  <mssgle:LineSegment
+                    End="72.1382781494929,43.1081790792298" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.1382781494929,43.1081790792298"
+                    Point2="76.1382781494929,43.1081790792298"
+                    Point3="76.1382781494929,47.1081790792298" />
+                  <mssgle:LineSegment
+                    End="76.1382781494929,65.1775658850213" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output3]"
+          TopLeft="985.37959130846,1726.90420163165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="94.6931359401864,63.4957983683551"
+              Start="0,0"
+              End="94.6931359401864,55.9957983683551">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.6620792607729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.6620792607729"
+                    Point2="0,37.6620792607729"
+                    Point3="4,37.6620792607729" />
+                  <mssgle:LineSegment
+                    End="90.6931359401864,37.6620792607729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90.6931359401864,37.6620792607729"
+                    Point2="94.6931359401864,37.6620792607729"
+                    Point3="94.6931359401864,41.6620792607729" />
+                  <mssgle:LineSegment
+                    End="94.6931359401864,55.9957983683551" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output4]"
+          TopLeft="1220.9714283768,1726.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-97.432034461488,64.0000000000002"
+              Start="0,0"
+              End="-97.432034461488,56.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.961142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.961142857143"
+                    Point2="0,37.961142857143"
+                    Point3="-4,37.961142857143" />
+                  <mssgle:LineSegment
+                    End="-93.432034461488,37.961142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-93.432034461488,37.961142857143"
+                    Point2="-97.432034461488,37.961142857143"
+                    Point3="-97.432034461488,41.961142857143" />
+                  <mssgle:LineSegment
+                    End="-97.432034461488,56.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output5]"
+          TopLeft="874.29387712006,1424.07394959209">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.3727895466069,75.9260504079114"
+              Start="0,0"
+              End="88.3727895466069,68.4260504079114">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.0349944705211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.0349944705211"
+                    Point2="0,45.0349944705211"
+                    Point3="4,45.0349944705211" />
+                  <mssgle:LineSegment
+                    End="84.3727895466069,45.0349944705211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.3727895466069,45.0349944705211"
+                    Point2="88.3727895466069,45.0349944705211"
+                    Point3="88.3727895466069,49.0349944705211" />
+                  <mssgle:LineSegment
+                    End="88.3727895466069,68.4260504079114" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output6]"
+          TopLeft="240.617678696043,383.523586535524">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.248974857602,69.3297484067637"
+              Start="0,0"
+              End="139.248974857602,61.8297484067637">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.1224450549833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.1224450549833"
+                    Point2="0,41.1224450549833"
+                    Point3="4,41.1224450549833" />
+                  <mssgle:LineSegment
+                    End="135.248974857602,41.1224450549833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.248974857602,41.1224450549833"
+                    Point2="139.248974857602,41.1224450549833"
+                    Point3="139.248974857602,45.1224450549833" />
+                  <mssgle:LineSegment
+                    End="139.248974857602,61.8297484067637" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output7]"
+          TopLeft="1405.83374019645,2129.30786938619">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-79.5064887582691,59.6375861059987"
+              Start="0,0"
+              End="-79.5064887582691,52.1375861059987">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.3736082160152" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.3736082160152"
+                    Point2="0,35.3736082160152"
+                    Point3="-4,35.3736082160152" />
+                  <mssgle:LineSegment
+                    End="-75.5064887582691,35.3736082160152" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-75.5064887582691,35.3736082160152"
+                    Point2="-79.5064887582691,35.3736082160152"
+                    Point3="-79.5064887582691,39.3736082160152" />
+                  <mssgle:LineSegment
+                    End="-79.5064887582691,52.1375861059987" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output16]"
           TopLeft="984.88979565423,1240.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26420,7 +27266,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output9]"
+          Id="Package\Load Fact.Paths[Sort Output8]"
           TopLeft="582.568689040811,381.694568539782">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26454,7 +27300,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output10]"
+          Id="Package\Load Fact.Paths[Sort Output9]"
           TopLeft="631.477527925781,1017.01333414883">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26488,7 +27334,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output11]"
+          Id="Package\Load Fact.Paths[Sort Output10]"
           TopLeft="656.329231501909,588.566949574027">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26522,7 +27368,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output12]"
+          Id="Package\Load Fact.Paths[Sort Output11]"
           TopLeft="397.847604582478,590.346667454614">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26556,7 +27402,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output13]"
+          Id="Package\Load Fact.Paths[Sort Output12]"
           TopLeft="1304.74431517172,1923.63514206838">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26590,7 +27436,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output14]"
+          Id="Package\Load Fact.Paths[Sort Output13]"
           TopLeft="881.028539331269,1016.78431670804">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26624,19 +27470,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output]"
-          TopLeft="984.8,1138.4">
+          Id="Package\Load Fact.Paths[Sort Output14]"
+          TopLeft="729.586368941922,790.319330494923">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.8000000000002"
+              EndConnector="-84.2530575430967,83.2273373729504"
               Start="0,0"
-              End="0,53.3000000000002">
+              End="-84.2530575430967,75.7273373729504">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.3000000000002" />
+                    End="0,45.3657006817843" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.3657006817843"
+                    Point2="0,49.3657006817843"
+                    Point3="-4,49.3657006817843" />
+                  <mssgle:LineSegment
+                    End="-80.2530575430967,49.3657006817843" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-80.2530575430967,49.3657006817843"
+                    Point2="-84.2530575430967,49.3657006817843"
+                    Point3="-84.2530575430967,53.3657006817843" />
+                  <mssgle:LineSegment
+                    End="-84.2530575430967,75.7273373729504" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26646,7 +27504,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output4]"
+          Id="Package\Load Fact.Paths[OLE DB Source Output]"
           TopLeft="1405.87443135803,2036.12121289263">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -26659,6 +27517,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,44.0866564935614" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output4]"
+          TopLeft="984.8,1138.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.8000000000002"
+              Start="0,0"
+              End="0,53.3000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.3000000000002" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26691,18 +27571,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output2]"
-          TopLeft="655.220388928749,491.352383636596">
+          TopLeft="656.934674672229,490.128854207672">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55.6145659374315"
+              EndConnector="0,56.8380953663553"
               Start="0,0"
-              End="0,48.1145659374315">
+              End="0,49.3380953663553">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.1145659374315" />
+                    End="0,49.3380953663553" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26735,18 +27615,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output9]"
-          TopLeft="1305.9918094541,1829.67272894079">
+          TopLeft="1110.70612253934,1328.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.3624131275913"
+              EndConnector="0,53.0218487762663"
               Start="0,0"
-              End="0,44.8624131275913">
+              End="0,45.5218487762663">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.8624131275913" />
+                    End="0,45.5218487762663" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26823,18 +27703,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output8]"
-          TopLeft="1110.70612253934,1328.8">
+          TopLeft="1305.9918094541,1829.67272894079">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.0218487762663"
+              EndConnector="0,52.3624131275913"
               Start="0,0"
-              End="0,45.5218487762663">
+              End="0,44.8624131275913">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5218487762663" />
+                    End="0,44.8624131275913" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27213,7 +28093,7 @@
     design-time-name="Package\Load Product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Load Product\Sort by category id"
@@ -27281,9 +28161,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27305,9 +28183,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27341,9 +28217,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27365,9 +28239,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27389,9 +28261,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27413,9 +28283,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27437,9 +28305,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27473,9 +28339,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27818,7 +28682,7 @@
     design-time-name="Package\Load Time">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="259.2,41.6"
           Id="Package\Load Time\OLE DB Source SalesOrderHeader_op 1 1"
@@ -27866,7 +28730,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27888,7 +28754,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27922,7 +28790,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27944,7 +28814,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27978,7 +28850,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28000,7 +28874,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
