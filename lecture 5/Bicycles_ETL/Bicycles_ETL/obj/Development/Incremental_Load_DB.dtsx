@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="139"
-  DTS:VersionGUID="{2A7DE4A6-B74E-42EA-A060-08AA7EA7309C}">
+  DTS:VersionBuild="142"
+  DTS:VersionGUID="{20CA7EF7-E33C-4398-85A5-5609C685DD2B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2923,7 +2923,6 @@
                       cachedDataType="wstr"
                       cachedLength="8"
                       cachedName="Title"
-                      cachedSortKeyPosition="2"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Title]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Title]" />
                     <inputColumn
@@ -2931,7 +2930,7 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="FirstName"
-                      cachedSortKeyPosition="3"
+                      cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[FirstName]" />
                     <inputColumn
@@ -2939,7 +2938,7 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="MiddleName"
-                      cachedSortKeyPosition="4"
+                      cachedSortKeyPosition="2"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MiddleName]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MiddleName]" />
                     <inputColumn
@@ -2947,7 +2946,7 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="LastName"
-                      cachedSortKeyPosition="5"
+                      cachedSortKeyPosition="3"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[LastName]" />
                     <inputColumn
@@ -2955,7 +2954,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Phone"
-                      cachedSortKeyPosition="7"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Phone]" />
                     <inputColumn
@@ -2963,14 +2961,13 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="EmailAddress"
-                      cachedSortKeyPosition="8"
+                      cachedSortKeyPosition="4"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmailAddress]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailAddress]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EmailPromotion]"
                       cachedDataType="i4"
                       cachedName="EmailPromotion"
-                      cachedSortKeyPosition="9"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EmailPromotion]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailPromotion]" />
                     <inputColumn
@@ -2978,7 +2975,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="AddressLine1"
-                      cachedSortKeyPosition="10"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressLine1]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine1]" />
                     <inputColumn
@@ -2986,7 +2982,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="AddressLine2"
-                      cachedSortKeyPosition="11"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressLine2]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine2]" />
                     <inputColumn
@@ -2994,7 +2989,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="City"
-                      cachedSortKeyPosition="12"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[City]" />
                     <inputColumn
@@ -3002,7 +2996,6 @@
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="PostalCode"
-                      cachedSortKeyPosition="14"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostalCode]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[PostalCode]" />
                     <inputColumn
@@ -3010,7 +3003,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="MaritalStatus"
-                      cachedSortKeyPosition="17"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaritalStatus]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MaritalStatus]" />
                     <inputColumn
@@ -3018,7 +3010,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="YearlyIncome"
-                      cachedSortKeyPosition="18"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[YearlyIncome]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[YearlyIncome]" />
                     <inputColumn
@@ -3026,21 +3017,18 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Gender"
-                      cachedSortKeyPosition="19"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Gender]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalChildren]"
                       cachedDataType="i4"
                       cachedName="TotalChildren"
-                      cachedSortKeyPosition="20"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalChildren]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[TotalChildren]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NumberChildrenAtHome]"
                       cachedDataType="i4"
                       cachedName="NumberChildrenAtHome"
-                      cachedSortKeyPosition="21"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumberChildrenAtHome]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberChildrenAtHome]" />
                     <inputColumn
@@ -3048,7 +3036,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Education"
-                      cachedSortKeyPosition="22"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Education]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Education]" />
                     <inputColumn
@@ -3056,35 +3043,30 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Occupation"
-                      cachedSortKeyPosition="23"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Occupation]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Occupation]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CustomerID]"
                       cachedDataType="i4"
                       cachedName="CustomerID"
-                      cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID_OP]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CustomerID]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BirthDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="BirthDate"
-                      cachedSortKeyPosition="16"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOB]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[BirthDate]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HomeOwnerFlag]"
                       cachedDataType="bool"
                       cachedName="HomeOwnerFlag"
-                      cachedSortKeyPosition="24"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HouseOwnerFlag]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[HomeOwnerFlag]" />
                     <inputColumn
                       refId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NumberCarsOwned]"
                       cachedDataType="i4"
                       cachedName="NumberCarsOwned"
-                      cachedSortKeyPosition="25"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumberCarsOwned]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberCarsOwned]" />
                     <inputColumn
@@ -3092,7 +3074,6 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="StateProvinceName"
-                      cachedSortKeyPosition="13"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StateProvince]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[StateProvinceName]" />
                     <inputColumn
@@ -3100,7 +3081,6 @@
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CountryRegionName"
-                      cachedSortKeyPosition="15"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryRegion]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CountryRegionName]" />
                     <inputColumn
@@ -3108,7 +3088,6 @@
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="Suffix"
-                      cachedSortKeyPosition="6"
                       externalMetadataColumnId="Package\Load Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suffix]"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Suffix]" />
                   </inputColumns>
@@ -5060,7 +5039,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5077,7 +5056,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5094,7 +5073,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">3</property>
+                          name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5111,7 +5090,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">4</property>
+                          name="NewSortKeyPosition">2</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5128,7 +5107,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">5</property>
+                          name="NewSortKeyPosition">3</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5145,7 +5124,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">6</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5162,7 +5141,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">7</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5179,7 +5158,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">8</property>
+                          name="NewSortKeyPosition">4</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5195,7 +5174,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">9</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5212,7 +5191,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">10</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5229,7 +5208,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">11</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5246,7 +5225,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">12</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5263,7 +5242,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">13</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5280,7 +5259,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">14</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5297,7 +5276,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">15</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5313,7 +5292,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">16</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5330,7 +5309,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">17</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5347,7 +5326,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">18</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5364,7 +5343,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">19</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5380,7 +5359,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">20</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5396,7 +5375,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">21</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5413,7 +5392,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">22</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5430,7 +5409,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">23</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5446,7 +5425,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">24</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5462,7 +5441,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">25</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -5479,8 +5458,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CustomerID]"
                       dataType="i4"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CustomerID]"
-                      name="CustomerID"
-                      sortKeyPosition="1">
+                      name="CustomerID">
                       <properties>
                         <property
                           containsID="true"
@@ -5494,8 +5472,7 @@
                       dataType="wstr"
                       length="8"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Title]"
-                      name="Title"
-                      sortKeyPosition="2">
+                      name="Title">
                       <properties>
                         <property
                           containsID="true"
@@ -5510,7 +5487,7 @@
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[FirstName]"
                       name="FirstName"
-                      sortKeyPosition="3">
+                      sortKeyPosition="1">
                       <properties>
                         <property
                           containsID="true"
@@ -5525,7 +5502,7 @@
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MiddleName]"
                       name="MiddleName"
-                      sortKeyPosition="4">
+                      sortKeyPosition="2">
                       <properties>
                         <property
                           containsID="true"
@@ -5540,7 +5517,7 @@
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[LastName]"
                       name="LastName"
-                      sortKeyPosition="5">
+                      sortKeyPosition="3">
                       <properties>
                         <property
                           containsID="true"
@@ -5554,8 +5531,7 @@
                       dataType="wstr"
                       length="10"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Suffix]"
-                      name="Suffix"
-                      sortKeyPosition="6">
+                      name="Suffix">
                       <properties>
                         <property
                           containsID="true"
@@ -5569,8 +5545,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Phone]"
-                      name="Phone"
-                      sortKeyPosition="7">
+                      name="Phone">
                       <properties>
                         <property
                           containsID="true"
@@ -5585,7 +5560,7 @@
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailAddress]"
                       name="EmailAddress"
-                      sortKeyPosition="8">
+                      sortKeyPosition="4">
                       <properties>
                         <property
                           containsID="true"
@@ -5598,8 +5573,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailPromotion]"
                       dataType="i4"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[EmailPromotion]"
-                      name="EmailPromotion"
-                      sortKeyPosition="9">
+                      name="EmailPromotion">
                       <properties>
                         <property
                           containsID="true"
@@ -5613,8 +5587,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine1]"
-                      name="AddressLine1"
-                      sortKeyPosition="10">
+                      name="AddressLine1">
                       <properties>
                         <property
                           containsID="true"
@@ -5628,8 +5601,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[AddressLine2]"
-                      name="AddressLine2"
-                      sortKeyPosition="11">
+                      name="AddressLine2">
                       <properties>
                         <property
                           containsID="true"
@@ -5643,8 +5615,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[City]"
-                      name="City"
-                      sortKeyPosition="12">
+                      name="City">
                       <properties>
                         <property
                           containsID="true"
@@ -5658,8 +5629,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[StateProvinceName]"
-                      name="StateProvinceName"
-                      sortKeyPosition="13">
+                      name="StateProvinceName">
                       <properties>
                         <property
                           containsID="true"
@@ -5673,8 +5643,7 @@
                       dataType="wstr"
                       length="15"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[PostalCode]"
-                      name="PostalCode"
-                      sortKeyPosition="14">
+                      name="PostalCode">
                       <properties>
                         <property
                           containsID="true"
@@ -5688,8 +5657,7 @@
                       dataType="wstr"
                       length="50"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[CountryRegionName]"
-                      name="CountryRegionName"
-                      sortKeyPosition="15">
+                      name="CountryRegionName">
                       <properties>
                         <property
                           containsID="true"
@@ -5702,8 +5670,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[BirthDate]"
                       dataType="dbTimeStamp"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[BirthDate]"
-                      name="BirthDate"
-                      sortKeyPosition="16">
+                      name="BirthDate">
                       <properties>
                         <property
                           containsID="true"
@@ -5717,8 +5684,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[MaritalStatus]"
-                      name="MaritalStatus"
-                      sortKeyPosition="17">
+                      name="MaritalStatus">
                       <properties>
                         <property
                           containsID="true"
@@ -5732,8 +5698,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[YearlyIncome]"
-                      name="YearlyIncome"
-                      sortKeyPosition="18">
+                      name="YearlyIncome">
                       <properties>
                         <property
                           containsID="true"
@@ -5747,8 +5712,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Gender]"
-                      name="Gender"
-                      sortKeyPosition="19">
+                      name="Gender">
                       <properties>
                         <property
                           containsID="true"
@@ -5761,8 +5725,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[TotalChildren]"
                       dataType="i4"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[TotalChildren]"
-                      name="TotalChildren"
-                      sortKeyPosition="20">
+                      name="TotalChildren">
                       <properties>
                         <property
                           containsID="true"
@@ -5775,8 +5738,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberChildrenAtHome]"
                       dataType="i4"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberChildrenAtHome]"
-                      name="NumberChildrenAtHome"
-                      sortKeyPosition="21">
+                      name="NumberChildrenAtHome">
                       <properties>
                         <property
                           containsID="true"
@@ -5790,8 +5752,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Education]"
-                      name="Education"
-                      sortKeyPosition="22">
+                      name="Education">
                       <properties>
                         <property
                           containsID="true"
@@ -5805,8 +5766,7 @@
                       dataType="wstr"
                       length="255"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[Occupation]"
-                      name="Occupation"
-                      sortKeyPosition="23">
+                      name="Occupation">
                       <properties>
                         <property
                           containsID="true"
@@ -5819,8 +5779,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[HomeOwnerFlag]"
                       dataType="bool"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[HomeOwnerFlag]"
-                      name="HomeOwnerFlag"
-                      sortKeyPosition="24">
+                      name="HomeOwnerFlag">
                       <properties>
                         <property
                           containsID="true"
@@ -5833,8 +5792,7 @@
                       refId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberCarsOwned]"
                       dataType="i4"
                       lineageId="Package\Load Customer\Sort filter duplicate.Outputs[Sort Output].Columns[NumberCarsOwned]"
-                      name="NumberCarsOwned"
-                      sortKeyPosition="25">
+                      name="NumberCarsOwned">
                       <properties>
                         <property
                           containsID="true"
@@ -19321,9 +19279,9 @@
               startId="Package\Load Fact\Merge Join 5.Outputs[Merge Join Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output9]"
-              endId="Package\Load Fact\Sort by CurrencyId 2.Inputs[Sort Input]"
+              endId="Package\Load Fact\Sort by DueDate 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Currency_dw.Outputs[OLE DB Source Output]" />
+              startId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output7]"
               endId="Package\Load Fact\Sort by OrderDate 2.Inputs[Sort Input]"
@@ -19341,9 +19299,9 @@
               startId="Package\Load Fact\OLE DB Promotion_dw.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output8]"
-              endId="Package\Load Fact\Sort by DueDate 2.Inputs[Sort Input]"
+              endId="Package\Load Fact\Sort by CurrencyId 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Time_dw_2.Outputs[OLE DB Source Output]" />
+              startId="Package\Load Fact\OLE DB Currency_dw.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output3]"
               endId="Package\Load Fact\Sort by CustomerId 2.Inputs[Sort Input]"
@@ -19361,99 +19319,99 @@
               startId="Package\Load Fact\OLE DB SalesOrderDetail_op.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Load Fact.Paths[OLE DB Source Output]"
-              endId="Package\Load Fact\Sort by ShipDate 2.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Fact\OLE DB Time_dw_3.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Fact.Paths[OLE DB Source Output4]"
               endId="Package\Load Fact\Sort by TerritoryId 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Load Fact\OLE DB Territory_dw.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Load Fact.Paths[OLE DB Source Output4]"
+              endId="Package\Load Fact\Sort by ShipDate 2.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load Fact\OLE DB Time_dw_3.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Load Fact.Paths[Sort Output15]"
+              endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort by ShipDate 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output14]"
               endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by SpecialOfferId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output14]"
+              refId="Package\Load Fact.Paths[Sort Output13]"
               endId="Package\Load Fact\Merge Join 2.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by SpecialOfferId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output13]"
+              refId="Package\Load Fact.Paths[Sort Output12]"
               endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CustomerId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output12]"
+              refId="Package\Load Fact.Paths[Sort Output11]"
               endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by DueDate 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output11]"
+              refId="Package\Load Fact.Paths[Sort Output10]"
               endId="Package\Load Fact\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by ProductId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output10]"
+              refId="Package\Load Fact.Paths[Sort Output9]"
               endId="Package\Load Fact\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by ProductId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output9]"
+              refId="Package\Load Fact.Paths[Sort Output8]"
               endId="Package\Load Fact\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CustomerId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output8]"
-              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort by SalesOrderId 2.Outputs[Sort Output]" />
-            <path
               refId="Package\Load Fact.Paths[Sort Output6]"
-              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Fact\Sort by SalesOrderId.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Fact.Paths[Sort Output5]"
               endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CurrencyId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output4]"
+              refId="Package\Load Fact.Paths[Sort Output5]"
               endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by OrderDate 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output3]"
+              refId="Package\Load Fact.Paths[Sort Output4]"
               endId="Package\Load Fact\Merge Join 9.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by OrderDate.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output2]"
+              refId="Package\Load Fact.Paths[Sort Output3]"
               endId="Package\Load Fact\Merge Join 7.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by DueDate.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output1]"
+              refId="Package\Load Fact.Paths[Sort Output2]"
               endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by TerritoryId.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output]"
+              refId="Package\Load Fact.Paths[Sort Output1]"
               endId="Package\Load Fact\Merge Join 6.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by CurrencyId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output16]"
+              refId="Package\Load Fact.Paths[Sort Output]"
               endId="Package\Load Fact\Merge Join 5.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Load Fact\Sort by TerritoryId 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Load Fact.Paths[Sort Output7]"
-              endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Right Input]"
+              refId="Package\Load Fact.Paths[Sort Output16]"
+              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Load Fact\Sort by ShipDate 2.Outputs[Sort Output]" />
+              startId="Package\Load Fact\Sort by SalesOrderId 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load Fact.Paths[Sort Output7]"
+              endId="Package\Load Fact\Merge Join 4.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load Fact\Sort by SalesOrderId.Outputs[Sort Output]" />
             <path
               refId="Package\Load Fact.Paths[Sort Output17]"
               endId="Package\Load Fact\Merge Join 8.Inputs[Merge Join Left Input]"
@@ -26402,13 +26360,17 @@
           Id="Package\Load Customer\OLE DB IndividualDemoGraphic_op"
           TopLeft="558.857152374424,392.564707169318" />
         <NodeLayout
-          Size="120,41.6"
-          Id="Package\Load Customer\Union All"
-          TopLeft="614.285724746938,733.73109703328" />
+          Size="168,41.6"
+          Id="Package\Load Customer\Sort filter duplicate"
+          TopLeft="596.000005994525,831.811767194015" />
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Load Customer\Sort by CustomerId 2"
           TopLeft="585.714296438256,508.329414630349" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Load Customer\Union All"
+          TopLeft="614.285724746938,733.73109703328" />
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\Load Customer\Merge Join"
@@ -26425,6 +26387,84 @@
           Size="140,41.6"
           Id="Package\Load Customer\Excel Source"
           TopLeft="819.072091413341,507.255125077548" />
+        <EdgeLayout
+          Id="Package\Load Customer.Paths[Union All Output 1]"
+          TopLeft="677.142865370731,775.33109703328">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.480670160735"
+              Start="0,0"
+              End="0,48.980670160735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.980670160735" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Customer.Paths[Sort Output2]"
+          TopLeft="679.518375400691,873.411767194015">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.062189034525"
+              Start="0,0"
+              End="0,51.562189034525">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.562189034525" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Customer.Paths[Sort Output1]"
+          TopLeft="675.314296438256,549.929414630349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-115.961907408837,83.9529415067911"
+              Start="0,0"
+              End="-115.961907408837,76.4529415067911">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.7574750881713" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.7574750881713"
+                    Point2="0,49.7574750881713"
+                    Point3="-4,49.7574750881713" />
+                  <mssgle:LineSegment
+                    End="-111.961907408837,49.7574750881713" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-111.961907408837,49.7574750881713"
+                    Point2="-115.961907408837,49.7574750881713"
+                    Point3="-115.961907408837,53.7574750881713" />
+                  <mssgle:LineSegment
+                    End="-115.961907408837,76.4529415067911" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Customer.Paths[Sort Output]"
           TopLeft="404.400006130764,550.400002917121">
@@ -26593,88 +26633,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Customer.Paths[Sort Output1]"
-          TopLeft="675.314296438256,549.929414630349">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-115.961907408837,83.9529415067911"
-              Start="0,0"
-              End="-115.961907408837,76.4529415067911">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.7574750881713" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.7574750881713"
-                    Point2="0,49.7574750881713"
-                    Point3="-4,49.7574750881713" />
-                  <mssgle:LineSegment
-                    End="-111.961907408837,49.7574750881713" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-111.961907408837,49.7574750881713"
-                    Point2="-115.961907408837,49.7574750881713"
-                    Point3="-115.961907408837,53.7574750881713" />
-                  <mssgle:LineSegment
-                    End="-115.961907408837,76.4529415067911" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="168,41.6"
-          Id="Package\Load Customer\Sort filter duplicate"
-          TopLeft="596.000005994525,832.611767194015" />
-        <EdgeLayout
-          Id="Package\Load Customer.Paths[Union All Output 1]"
-          TopLeft="677.142865370731,775.33109703328">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57.2806701607354"
-              Start="0,0"
-              End="0,49.7806701607354">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.7806701607354" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Customer.Paths[Sort Output2]"
-          TopLeft="679.518375400691,874.211767194015">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.262189034525"
-              Start="0,0"
-              End="0,50.762189034525">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50.762189034525" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -26734,7 +26692,7 @@
     design-time-name="Package\Load Fact">
     <LayoutInfo>
       <GraphLayout
-        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172.8,41.6"
           Id="Package\Load Fact\OLE DB Time_dw_3"
@@ -26790,7 +26748,7 @@
         <NodeLayout
           Size="183.2,41.6"
           Id="Package\Load Fact\OLE DB Customer_dw"
-          TopLeft="785.442147050277,868.03809733194" />
+          TopLeft="786.013575631437,868.649862046402" />
         <NodeLayout
           Size="165.6,41.6"
           Id="Package\Load Fact\Sort by DueDate 2"
@@ -26922,283 +26880,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[Sort Output15]"
-          TopLeft="521.716987457993,790.006051416263">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="80.1496572741659,83.5406164516098"
-              Start="0,0"
-              End="80.1496572741659,76.0406164516098">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.5515199295834" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.5515199295834"
-                    Point2="0,49.5515199295834"
-                    Point3="4,49.5515199295834" />
-                  <mssgle:LineSegment
-                    End="76.1496572741659,49.5515199295834" />
-                  <mssgle:CubicBezierSegment
-                    Point1="76.1496572741659,49.5515199295834"
-                    Point2="80.1496572741659,49.5515199295834"
-                    Point3="80.1496572741659,53.5515199295834" />
-                  <mssgle:LineSegment
-                    End="80.1496572741659,76.0406164516098" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output]"
-          TopLeft="1108.50612219874,1423.42184877627">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-102.372788865411,76.5781512237338"
-              Start="0,0"
-              End="-102.372788865411,69.0781512237338">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.4217834115633" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.4217834115633"
-                    Point2="0,45.4217834115633"
-                    Point3="-4,45.4217834115633" />
-                  <mssgle:LineSegment
-                    End="-98.3727888654109,45.4217834115633" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-98.3727888654109,45.4217834115633"
-                    Point2="-102.372788865411,45.4217834115633"
-                    Point3="-102.372788865411,49.4217834115633" />
-                  <mssgle:LineSegment
-                    End="-102.372788865411,69.0781512237338" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output1]"
-          TopLeft="754.17959130846,1240.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="91.6870753582064,48.8"
-              Start="0,0"
-              End="91.6870753582064,41.3">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.9453714285714" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.9453714285714"
-                    Point2="0,28.9453714285714"
-                    Point3="4,28.9453714285714" />
-                  <mssgle:LineSegment
-                    End="87.6870753582064,28.9453714285714" />
-                  <mssgle:CubicBezierSegment
-                    Point1="87.6870753582064,28.9453714285714"
-                    Point2="91.6870753582064,28.9453714285714"
-                    Point3="91.6870753582064,32.9453714285714" />
-                  <mssgle:LineSegment
-                    End="91.6870753582064,41.3" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output2]"
-          TopLeft="1101.14654887768,1925.33455636901">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="76.1382781494929,72.6775658850213"
-              Start="0,0"
-              End="76.1382781494929,65.1775658850213">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.1081790792298" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39.1081790792298"
-                    Point2="0,43.1081790792298"
-                    Point3="4,43.1081790792298" />
-                  <mssgle:LineSegment
-                    End="72.1382781494929,43.1081790792298" />
-                  <mssgle:CubicBezierSegment
-                    Point1="72.1382781494929,43.1081790792298"
-                    Point2="76.1382781494929,43.1081790792298"
-                    Point3="76.1382781494929,47.1081790792298" />
-                  <mssgle:LineSegment
-                    End="76.1382781494929,65.1775658850213" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output3]"
-          TopLeft="985.37959130846,1726.90420163165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="94.6931359401864,63.4957983683551"
-              Start="0,0"
-              End="94.6931359401864,55.9957983683551">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.6620792607729" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.6620792607729"
-                    Point2="0,37.6620792607729"
-                    Point3="4,37.6620792607729" />
-                  <mssgle:LineSegment
-                    End="90.6931359401864,37.6620792607729" />
-                  <mssgle:CubicBezierSegment
-                    Point1="90.6931359401864,37.6620792607729"
-                    Point2="94.6931359401864,37.6620792607729"
-                    Point3="94.6931359401864,41.6620792607729" />
-                  <mssgle:LineSegment
-                    End="94.6931359401864,55.9957983683551" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output4]"
-          TopLeft="1220.9714283768,1726.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-97.432034461488,64.0000000000002"
-              Start="0,0"
-              End="-97.432034461488,56.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.961142857143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.961142857143"
-                    Point2="0,37.961142857143"
-                    Point3="-4,37.961142857143" />
-                  <mssgle:LineSegment
-                    End="-93.432034461488,37.961142857143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-93.432034461488,37.961142857143"
-                    Point2="-97.432034461488,37.961142857143"
-                    Point3="-97.432034461488,41.961142857143" />
-                  <mssgle:LineSegment
-                    End="-97.432034461488,56.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output5]"
-          TopLeft="874.29387712006,1424.07394959209">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88.3727895466069,75.9260504079114"
-              Start="0,0"
-              End="88.3727895466069,68.4260504079114">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.0349944705211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.0349944705211"
-                    Point2="0,45.0349944705211"
-                    Point3="4,45.0349944705211" />
-                  <mssgle:LineSegment
-                    End="84.3727895466069,45.0349944705211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="84.3727895466069,45.0349944705211"
-                    Point2="88.3727895466069,45.0349944705211"
-                    Point3="88.3727895466069,49.0349944705211" />
-                  <mssgle:LineSegment
-                    End="88.3727895466069,68.4260504079114" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output6]"
-          TopLeft="240.617678696043,383.523586535524">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="139.248974857602,69.3297484067637"
-              Start="0,0"
-              End="139.248974857602,61.8297484067637">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.1224450549833" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.1224450549833"
-                    Point2="0,41.1224450549833"
-                    Point3="4,41.1224450549833" />
-                  <mssgle:LineSegment
-                    End="135.248974857602,41.1224450549833" />
-                  <mssgle:CubicBezierSegment
-                    Point1="135.248974857602,41.1224450549833"
-                    Point2="139.248974857602,41.1224450549833"
-                    Point3="139.248974857602,45.1224450549833" />
-                  <mssgle:LineSegment
-                    End="139.248974857602,61.8297484067637" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output7]"
           TopLeft="1405.83374019645,2129.30786938619">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27228,11 +26916,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output16]"
+          Id="Package\Load Fact.Paths[Sort Output]"
           TopLeft="984.88979565423,1240.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27262,11 +26952,265 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output8]"
+          Id="Package\Load Fact.Paths[Sort Output1]"
+          TopLeft="1108.50612219874,1423.42184877627">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-102.372788865411,76.5781512237338"
+              Start="0,0"
+              End="-102.372788865411,69.0781512237338">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.4217834115633" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.4217834115633"
+                    Point2="0,45.4217834115633"
+                    Point3="-4,45.4217834115633" />
+                  <mssgle:LineSegment
+                    End="-98.3727888654109,45.4217834115633" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-98.3727888654109,45.4217834115633"
+                    Point2="-102.372788865411,45.4217834115633"
+                    Point3="-102.372788865411,49.4217834115633" />
+                  <mssgle:LineSegment
+                    End="-102.372788865411,69.0781512237338" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output2]"
+          TopLeft="754.17959130846,1240.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="91.6870753582064,48.8"
+              Start="0,0"
+              End="91.6870753582064,41.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.9453714285714" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.9453714285714"
+                    Point2="0,28.9453714285714"
+                    Point3="4,28.9453714285714" />
+                  <mssgle:LineSegment
+                    End="87.6870753582064,28.9453714285714" />
+                  <mssgle:CubicBezierSegment
+                    Point1="87.6870753582064,28.9453714285714"
+                    Point2="91.6870753582064,28.9453714285714"
+                    Point3="91.6870753582064,32.9453714285714" />
+                  <mssgle:LineSegment
+                    End="91.6870753582064,41.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output3]"
+          TopLeft="1101.14654887768,1925.33455636901">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.1382781494929,72.6775658850213"
+              Start="0,0"
+              End="76.1382781494929,65.1775658850213">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.1081790792298" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.1081790792298"
+                    Point2="0,43.1081790792298"
+                    Point3="4,43.1081790792298" />
+                  <mssgle:LineSegment
+                    End="72.1382781494929,43.1081790792298" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.1382781494929,43.1081790792298"
+                    Point2="76.1382781494929,43.1081790792298"
+                    Point3="76.1382781494929,47.1081790792298" />
+                  <mssgle:LineSegment
+                    End="76.1382781494929,65.1775658850213" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output4]"
+          TopLeft="985.37959130846,1726.90420163165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="94.6931359401864,63.4957983683551"
+              Start="0,0"
+              End="94.6931359401864,55.9957983683551">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.6620792607729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.6620792607729"
+                    Point2="0,37.6620792607729"
+                    Point3="4,37.6620792607729" />
+                  <mssgle:LineSegment
+                    End="90.6931359401864,37.6620792607729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90.6931359401864,37.6620792607729"
+                    Point2="94.6931359401864,37.6620792607729"
+                    Point3="94.6931359401864,41.6620792607729" />
+                  <mssgle:LineSegment
+                    End="94.6931359401864,55.9957983683551" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output5]"
+          TopLeft="1220.9714283768,1726.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-97.432034461488,64.0000000000002"
+              Start="0,0"
+              End="-97.432034461488,56.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.961142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.961142857143"
+                    Point2="0,37.961142857143"
+                    Point3="-4,37.961142857143" />
+                  <mssgle:LineSegment
+                    End="-93.432034461488,37.961142857143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-93.432034461488,37.961142857143"
+                    Point2="-97.432034461488,37.961142857143"
+                    Point3="-97.432034461488,41.961142857143" />
+                  <mssgle:LineSegment
+                    End="-97.432034461488,56.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output6]"
+          TopLeft="874.29387712006,1424.07394959209">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.3727895466069,75.9260504079114"
+              Start="0,0"
+              End="88.3727895466069,68.4260504079114">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.0349944705211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.0349944705211"
+                    Point2="0,45.0349944705211"
+                    Point3="4,45.0349944705211" />
+                  <mssgle:LineSegment
+                    End="84.3727895466069,45.0349944705211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.3727895466069,45.0349944705211"
+                    Point2="88.3727895466069,45.0349944705211"
+                    Point3="88.3727895466069,49.0349944705211" />
+                  <mssgle:LineSegment
+                    End="88.3727895466069,68.4260504079114" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output7]"
+          TopLeft="240.617678696043,383.523586535524">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.248974857602,69.3297484067637"
+              Start="0,0"
+              End="139.248974857602,61.8297484067637">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.1224450549833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.1224450549833"
+                    Point2="0,41.1224450549833"
+                    Point3="4,41.1224450549833" />
+                  <mssgle:LineSegment
+                    End="135.248974857602,41.1224450549833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.248974857602,41.1224450549833"
+                    Point2="139.248974857602,41.1224450549833"
+                    Point3="139.248974857602,45.1224450549833" />
+                  <mssgle:LineSegment
+                    End="139.248974857602,61.8297484067637" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[Sort Output16]"
           TopLeft="582.568689040811,381.694568539782">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27296,11 +27240,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output9]"
+          Id="Package\Load Fact.Paths[Sort Output8]"
           TopLeft="631.477527925781,1017.01333414883">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27330,11 +27276,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output10]"
+          Id="Package\Load Fact.Paths[Sort Output9]"
           TopLeft="656.329231501909,588.566949574027">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27364,11 +27312,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output11]"
+          Id="Package\Load Fact.Paths[Sort Output10]"
           TopLeft="397.847604582478,590.346667454614">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27398,11 +27348,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output12]"
+          Id="Package\Load Fact.Paths[Sort Output11]"
           TopLeft="1304.74431517172,1923.63514206838">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27432,11 +27384,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output13]"
+          Id="Package\Load Fact.Paths[Sort Output12]"
           TopLeft="881.028539331269,1016.78431670804">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27466,11 +27420,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[Sort Output14]"
+          Id="Package\Load Fact.Paths[Sort Output13]"
           TopLeft="729.586368941922,790.319330494923">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27500,33 +27456,49 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output]"
-          TopLeft="1405.87443135803,2036.12121289263">
+          Id="Package\Load Fact.Paths[Sort Output14]"
+          TopLeft="521.716987457993,790.006051416263">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51.5866564935614"
+              EndConnector="80.1496572741659,83.5406164516098"
               Start="0,0"
-              End="0,44.0866564935614">
+              End="80.1496572741659,76.0406164516098">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.0866564935614" />
+                    End="0,45.5515199295834" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.5515199295834"
+                    Point2="0,49.5515199295834"
+                    Point3="4,49.5515199295834" />
+                  <mssgle:LineSegment
+                    End="76.1496572741659,49.5515199295834" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.1496572741659,49.5515199295834"
+                    Point2="80.1496572741659,49.5515199295834"
+                    Point3="80.1496572741659,53.5515199295834" />
+                  <mssgle:LineSegment
+                    End="80.1496572741659,76.0406164516098" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Fact.Paths[OLE DB Source Output4]"
+          Id="Package\Load Fact.Paths[OLE DB Source Output]"
           TopLeft="984.8,1138.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -27544,7 +27516,33 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Fact.Paths[OLE DB Source Output4]"
+          TopLeft="1405.87443135803,2036.12121289263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.5866564935614"
+              Start="0,0"
+              End="0,44.0866564935614">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.0866564935614" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27566,7 +27564,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27588,51 +27588,57 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output3]"
-          TopLeft="879.035343190773,909.63809733194">
+          TopLeft="879.321057481353,910.249862046402">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,65.5462193760961"
+              EndConnector="0,64.9344546616338"
               Start="0,0"
-              End="0,58.0462193760961">
+              End="0,57.4344546616338">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.0462193760961" />
+                    End="0,57.4344546616338" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output9]"
-          TopLeft="1110.70612253934,1328.8">
+          TopLeft="1305.9918094541,1829.67272894079">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.0218487762663"
+              EndConnector="0,52.3624131275913"
               Start="0,0"
-              End="0,45.5218487762663">
+              End="0,44.8624131275913">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5218487762663" />
+                    End="0,44.8624131275913" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27654,7 +27660,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27676,7 +27684,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27698,29 +27708,33 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Fact.Paths[OLE DB Source Output8]"
-          TopLeft="1305.9918094541,1829.67272894079">
+          TopLeft="1110.70612253934,1328.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.3624131275913"
+              EndConnector="0,53.0218487762663"
               Start="0,0"
-              End="0,44.8624131275913">
+              End="0,45.5218487762663">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.8624131275913" />
+                    End="0,45.5218487762663" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27742,7 +27756,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27764,7 +27780,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27786,7 +27804,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27808,7 +27828,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27830,7 +27852,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27852,7 +27876,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27874,7 +27900,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27896,7 +27924,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27918,7 +27948,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -27940,7 +27972,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -28093,7 +28127,7 @@
     design-time-name="Package\Load Product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Load Product\Sort by category id"
@@ -28161,7 +28195,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28183,7 +28219,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28217,7 +28255,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28239,7 +28279,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28261,7 +28303,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28283,7 +28327,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28305,7 +28351,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -28339,7 +28387,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
