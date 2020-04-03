@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Bicycles_ETL", "Bicycles_ETL\Bicycles_ETL.dtproj", "{7ADAA8FA-9723-4679-B607-C3710E22FB6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ADAA8FA-9723-4679-B607-C3710E22FB6C}.Development|Default.ActiveCfg = Development
+		{7ADAA8FA-9723-4679-B607-C3710E22FB6C}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C45570A0-DBDD-4E5F-9E2E-789B169AAABF}
+	EndGlobalSection
+EndGlobal
