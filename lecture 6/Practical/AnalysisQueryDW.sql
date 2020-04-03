@@ -27,3 +27,15 @@ FROM Facts
 INNER JOIN Dim_Time
 ON Dim_Time.id = facts.OrderTimeID
 GROUP BY Dim_Time.YEAR, Dim_Time.MONTH
+
+/* Phân tích tổng số lượng bán được và tổng chi phí vận
+   chuyển theo SaleTerritory */
+
+SELECT 
+  territory.Name, 
+  SUM(SoldProductQty) AS SoldQuantity, 
+  SUM(Freight) AS Freight
+FROM Facts as facts
+INNER JOIN Dim_Sale_Territory AS territory
+  ON territory.id = facts.TerritoryID
+GROUP BY facts.TerritoryID, territory.Name
