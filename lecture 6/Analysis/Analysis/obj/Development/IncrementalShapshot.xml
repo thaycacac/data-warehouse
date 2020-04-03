@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Analysis</Database>
+    <Server>DESKTOP-G4NBSB1\THAYCACAC</Server>
+    <ConnectionString>Data Source=DESKTOP-G4NBSB1\THAYCACAC;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>pYXAwsAuzccUgsrvPS4sEp4ms8c=4/3/2020 9:27:49 PM4/3/2020 9:27:49 PM</TimeStamp>
+        <ID>
+          <String>ASSIGNMENT DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>tjbQI9Ew2qQQYisu9Rc7TWsdXRI=4/3/2020 9:28:02 PM4/3/2020 9:28:02 PM</TimeStamp>
+        <ID>
+          <String>ASSIGNMENT DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>10QSom64MhrpCtp5aOm7NmlvsLo=4/3/2020 9:45:07 PM4/3/2020 9:28:18 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>G5Hw5Rtj+m3qE4a6JXm927fIx6E=4/3/2020 9:45:24 PM4/3/2020 9:28:18 PM</TimeStamp>
+        <ID>
+          <String>Dim Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BK3unzrr+73i2MbItvZab3DrWwc=4/3/2020 9:45:49 PM4/3/2020 9:28:18 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qMB9iICAX/71ZZ33OPTgNJNDHHk=4/3/2020 9:45:59 PM4/3/2020 9:28:18 PM</TimeStamp>
+        <ID>
+          <String>Dim Sale Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fIrL+FuaVqF2qGWnnEL8AFcWpOU=4/3/2020 9:46:14 PM4/3/2020 9:28:18 PM</TimeStamp>
+        <ID>
+          <String>Dim Currency</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>U+7UKluD6CkohEJ+lrMC3I3R11w=4/3/2020 9:46:28 PM4/3/2020 9:28:18 PM</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>aqtaUNkRrB6nptm9EmFhCmVDrh8=4/3/2020 9:46:28 PM4/3/2020 9:28:17 PMiDwvYuCPBAHrWFh9PTOZpFf9zo4=4/3/2020 9:28:18 PM4/3/2020 9:28:17 PM</TimeStamp>
+        <ID>
+          <String>ASSIGNMENT DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>AgJbUrtOTfGf0E672bcWgVeEsDs=4/3/2020 9:20:11 PM4/3/2020 9:20:10 PM</TimeStamp>
+      <ID>
+        <String>Analysis</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-04-03T14:50:16.83Z</LastDeployed>
+</DeploymentSnapshot>
