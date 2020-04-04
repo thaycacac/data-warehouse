@@ -22,3 +22,23 @@ The same lecture 3 but a little harder, and have to rely on database op.
 ### Lecture 5
 
 Practice init load data warehouse
+
+![Create db dataware house](https://github.com/thaycacac/data-warehouse/blob/master/images/create_dw.PNG?raw=true)
+
+Initial load
+
+![Initial load](https://github.com/thaycacac/data-warehouse/blob/master/images/incremental_load_1.PNG?raw=true)
+
+![Initial load 2](https://github.com/thaycacac/data-warehouse/blob/master/images/incremental_load_2.PNG?raw=true)
+
+### Lecture 6
+
+Practice analysis service
+
+![analysis service](https://github.com/thaycacac/data-warehouse/blob/master/images/analysis.PNG?raw=true)
+
+### Lecture 7
+
+Practice report server
+
+![report service](https://github.com/thaycacac/data-warehouse/blob/master/images/report.PNG?raw=true)
