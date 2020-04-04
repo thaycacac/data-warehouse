@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>test</Database>
+    <Server>DESKTOP-G4NBSB1\THAYCACAC</Server>
+    <ConnectionString>Data Source=DESKTOP-G4NBSB1\THAYCACAC;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>qCX9NrbNX71WGsQwpSEuso4/H20=4/4/2020 10:57:08 AM4/4/2020 10:57:08 AM</TimeStamp>
+        <ID>
+          <String>ASSIGNMENT DW CLONE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>7Lo4xc9xE92K4udzdQG4L4A6eis=4/4/2020 12:02:07 PM4/4/2020 12:02:07 PM</TimeStamp>
+        <ID>
+          <String>ASSIGNMENT DW CLONE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q8R7QrG4gMpwSyxlbpWOSoxzjYU=4/4/2020 12:03:01 PM4/4/2020 12:02:24 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c+NojogEyKIjGx4U5wIe/QO5UyY=4/4/2020 12:03:01 PM4/4/2020 12:02:24 PM</TimeStamp>
+        <ID>
+          <String>Dim Sale Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3KPUULz5Vu43YB8el9ADehElbYQ=4/4/2020 12:03:01 PM4/4/2020 12:02:24 PM</TimeStamp>
+        <ID>
+          <String>Dim Product Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lL9lb4zL0YGLx2xOImXmuI4a7Go=4/4/2020 12:03:01 PM4/4/2020 12:02:24 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>l2dS8EafbjAQK33v0KX0WgD+Pq8=4/4/2020 12:03:01 PM4/4/2020 12:02:24 PM9Ej4EbIxQ/TF5EiS15qo0YXPz3g=4/4/2020 12:02:24 PM4/4/2020 12:02:24 PM</TimeStamp>
+        <ID>
+          <String>ASSIGNMENT DW CLONE</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>o3pXsRCd0eG6hVozuDQi3EujJlc=4/4/2020 10:56:52 AM4/4/2020 10:56:52 AM</TimeStamp>
+      <ID>
+        <String>test</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-04-04T05:03:03.466667Z</LastDeployed>
+</DeploymentSnapshot>
