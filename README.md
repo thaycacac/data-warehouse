@@ -22,6 +22,7 @@ The same lecture 3 but a little harder, and have to rely on database op.
 ### Lecture 5
 
 Practice init load data warehouse
+Explain: https://youtu.be/exbiuZnwTBA
 
 ![Create db dataware house](https://github.com/thaycacac/data-warehouse/blob/master/images/create_dw.PNG?raw=true)
 
